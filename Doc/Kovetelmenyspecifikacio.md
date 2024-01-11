@@ -12,6 +12,16 @@ Mindemellett ugyanakkor vadonatúj kiadások is ismét megjelennek, hogy kielég
 azokét, akik szívéhez a bakelitek utánozhatatlan hangzásvilága áll közelebb a széles körben elérhető digitálisan
 tömörített változatokhoz képest.
 
+## Jelenlegi helyzet
+
+Megrendelőnk egy jelentősebb gyűjteményt halmozott fel az évtizedek során főleg a rokonságban megmaradt darabokból, de emellett hobbijává is vált, hogy hagyatékokból vagy internetről is összegyűjtsön ritkább példányokat. Ezen gyűjtés során született meg a felismerés, hogy nincs egyedül ezzel a hobbinak indult tevékenységgel és tekintve, hogy néhány Facebook csoportot leszámítva nincs erre specializálódott felület, ahol a vevők átláthatóan tudnának keresni. Jelenleg az idő nagy részét az utánajárás, kutatás és böngészés, valamint az utólagos minőség-ellenőrzés teszi ki.
+
+## Vágyálomrendszer
+
+Egy olyan bakelitekre specializálódott modern, de mégis a régi korszakot idéző felület létrehozása, ahol az eladók termékei és a vevők egymásra találhatnak, az elérhető termékek ellenőrzött minőségűek, a relikviák bizonyíthatóan eredetiek.
+A minőséget a vevők a lemezről készült digitális változatba való belehallgatással ellenőrizni tudják és az eladó garanciája mellett tudnak vásárolni a felületen.
+Potenciális eladók pedig kapcsolatba tudnak lépni a céggel és felajánlani hagyatékból megmaradt vagy egyéb gyűjteményüket megrendelőnknek.
+
 ## Megrendelői cél:
 
 1. Modern, könnyen átlátható, kereshető vásárlói felület
