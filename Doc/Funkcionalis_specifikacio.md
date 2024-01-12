@@ -15,3 +15,7 @@ A megrendelő egy eladói profillal tudjon belépni és űrlapszerűen újabb le
 Vevő: kereshet, rendezhet és megrendelhet, valamint kapcsolatba léphet az eladóval
 
 Eladó: új terméket vehet fel, módosíthat, törölhet
+
+## Jelenlegi helyzet
+
+Megrendelőnk jelenleg nem rendelkezik semmilyen weboldallal, jellemzően a Facebook Marketplace-t használja értékesítéshez, ahol számos csaló és szélhámos keseríti meg a dolgát. Erre szeretne megoldást. 
