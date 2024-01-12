@@ -19,3 +19,15 @@ Eladó: új terméket vehet fel, módosíthat, törölhet
 ## Jelenlegi helyzet
 
 Megrendelőnk jelenleg nem rendelkezik semmilyen weboldallal, jellemzően a Facebook Marketplace-t használja értékesítéshez, ahol számos csaló és szélhámos keseríti meg a dolgát. Erre szeretne megoldást. 
+
+A felmerülő problémák megoldásai:
+
+Átlátható, egyszerűen kezelhető felület mind az eladónak, mind a vevőknek.
+
+A potenciális visszaélések kiszűrésének minimalizálása kötelező regisztrációval, valamint előre utalással.
+
+Rendezhető, kategorizálható terméklista.
+
+Egyszerű vásárlási folyamat.
+
+Fenntartási költség minimalizálás.
