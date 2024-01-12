@@ -10,4 +10,4 @@ A szoftver fejlesztésekor meg kell határozni, hogy az adott részegységek mil
 | 4     | Fejlesztés                                   | Fejlesztés        | András, Erik, Levente, Tamás | 168 óra   |        |         |         |         |           |
 | 5     | Tesztelés                                    | Fejlesztés        | András, Erik, Levente, Tamás | 8 óra     |        |         |         |         |           |
 | 6     | Hibakeresés                                  | Fejlesztés        | András, Erik, Levente, Tamás | 4 óra     |        |         |         |         |           |
-| 7     | Bevezetés                                    | Végstádium        | András, Erik, Levente, Tamás | 4 óra     |        |         |         |         |           |
+| 7     | Bevezetés                                    | Végső stádium     | András, Erik, Levente, Tamás | 4 óra     |        |         |         |         |           |
