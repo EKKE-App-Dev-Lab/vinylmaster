@@ -36,6 +36,15 @@ Egyszerű vásárlási folyamat.
 
 Fenntartási költség minimalizálás.
 
+
+## Követelménylista
+
+Felhasználói szintek:
+- látogatóként a terméklista nem elérhető
+- regisztrált felhasználók láthatják a terméklistát és az árakat is, valamint vásárolhatnak
+- eladóként elérhető a termék adminisztrációs felület is
+- eladó tudja a felhasználókat is adott esetben törölni
+
 ## Képernyőtervek
 
 Kezdőoldal látványos kép elemekkel, de alapvetően nem kattintható, csak egy ízelító a kínálatból és a tevékenységről.
