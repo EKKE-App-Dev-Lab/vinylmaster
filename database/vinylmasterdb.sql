@@ -80,3 +80,12 @@ INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, borito
 VALUES ('Álomarcú lány', 'Presser Gábor', 'Magyar pop zene', 'Új', 'Pop', 7800, 'Assets\\images\\products\\alomarculany.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
 VALUES ('Best of Zséda', 'Zséda', 'Magyar pop slágerek', 'Új', 'Pop', 7600, 'Assets\\images\\products\\zsedabestof.jpg');
+
+CREATE TABLE `categories`
+(
+    `categoryID` bigint(20)  NOT NULL,
+    `p_cat_name` varchar(30) NOT NULL,
+    `p_cat_desc` text        NOT NULL
+);
+
+
