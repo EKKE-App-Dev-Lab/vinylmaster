@@ -302,6 +302,64 @@ ALTER TABLE `userorder`
     ADD PRIMARY KEY (`orderID`),
     ADD KEY `1_User_Many_Orders` (`userID`);
 
+ALTER TABLE `cart`
+    MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `cartitem`
+    MODIFY `cartItemID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `categories`
+    MODIFY `categoryID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `orderitem`
+    MODIFY `orderItemID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `transaction`
+    MODIFY `tranID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `types`
+    MODIFY `typeID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `user`
+    MODIFY `userID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `userorder`
+    MODIFY `orderID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+
+ALTER TABLE `cartitem`
+    ADD CONSTRAINT `1_Cart_Zero-Or-More_CartItems` FOREIGN KEY (`cartID`) REFERENCES `cart` (`cartID`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `1_Product_Many_CartItems` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `orderitem`
+    ADD CONSTRAINT `1_Order_Many_OrderItems` FOREIGN KEY (`orderID`) REFERENCES `userorder` (`orderID`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `1_Product_Many_OrderItems` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `product_category`
+    ADD CONSTRAINT `1_Category_Many_Products` FOREIGN KEY (`categoryID`) REFERENCES `categories` (`categoryID`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `1_Product_Many_Categories` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `product_type`
+    ADD CONSTRAINT `1_Product_Many_Types` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `1_Type_Many_Products` FOREIGN KEY (`typeID`) REFERENCES `types` (`typeID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `transaction`
+    ADD CONSTRAINT `1_Order_Many_Transactions` FOREIGN KEY (`orderID`) REFERENCES `userorder` (`orderID`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `1_User_Many_Transactions` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `userorder`
+    ADD CONSTRAINT `1_User_Many_Orders` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `cart`
+    ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 COMMIT;
 
