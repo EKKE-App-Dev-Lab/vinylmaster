@@ -88,13 +88,6 @@ CREATE TABLE `categories`
     `p_cat_desc` text        NOT NULL
 );
 
-CREATE TABLE `categories`
-(
-    `categoryID` bigint(20)  NOT NULL,
-    `p_cat_name` varchar(30) NOT NULL,
-    `p_cat_desc` text        NOT NULL
-);
-
 
 INSERT INTO `categories` (`categoryID`, `p_cat_name`, `p_cat_desc`)
 VALUES (1, 'Jazz',
@@ -121,7 +114,7 @@ CREATE TABLE `product_category`
 );
 
 INSERT INTO `product_category` (`productID`, `categoryID`)
-VALUES (1, 2),
+VALUES (1, 1),
        (2, 2),
        (3, 4),
        (4, 7),
@@ -143,21 +136,11 @@ VALUES (1, 2),
        (20, 6),
        (21, 6),
        (22, 6),
-       (23, 6),
-       (24, 6),
-       (37, 1),
-       (38, 1),
-       (39, 1),
-       (40, 1),
-       (41, 1),
-       (42, 1),
-       (43, 1),
-       (44, 1),
-       (45, 4),
-       (46, 4),
-       (47, 4),
-       (48, 4),
-       (49, 4),
-       (50, 4),
-       (51, 4),
-       (52, 4);
+       (23, 1),
+       (24, 2),
+       (25, 3),
+       (26, 4),
+       (27, 5),
+       (28, 6),
+       (29, 7),
+       (30, 8);
