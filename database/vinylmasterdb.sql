@@ -152,6 +152,44 @@ CREATE TABLE `types`
     `p_type_desc` text        NOT NULL
 ) ;
 
+CREATE TABLE `product_type`
+(
+    `productID` bigint(20) NOT NULL,
+    `typeID`    bigint(20) NOT NULL
+);
+
+INSERT INTO `product_type` (`productID`, `typeID`)
+VALUES (1, 2),
+       (2, 2),
+       (3, 2),
+       (4, 2),
+       (5, 2),
+       (6, 2),
+       (7, 1),
+       (8, 1),
+       (9, 1),
+       (10, 1),
+       (11, 1),
+       (12, 1),
+       (13, 2),
+       (14, 2),
+       (15, 2),
+       (16, 2),
+       (17, 2),
+       (18, 2),
+       (19, 2),
+       (20, 2),
+       (21, 2),
+       (22, 2),
+       (23, 2),
+       (24, 2),
+       (25, 2),
+       (26, 2),
+       (27, 2),
+       (28, 2),
+       (29, 2),
+       (30, 2);
+
 CREATE TABLE `types`
 (
     `typeID`      bigint(20)  NOT NULL,
@@ -229,3 +267,81 @@ CREATE TABLE `transaction`
     `status`        text       NOT NULL,
     `createDate`    timestamp  NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 );
+
+
+ALTER TABLE `cart`
+    ADD PRIMARY KEY (`cartID`),
+    ADD KEY `userID` (`userID`);
+
+ALTER TABLE `cartitem`
+    ADD PRIMARY KEY (`cartItemID`),
+    ADD KEY `1_Cart_Zero-Or-More_CartItems` (`cartID`),
+    ADD KEY `1_Product_Many_CartItems` (`productID`);
+
+ALTER TABLE `categories`
+    ADD PRIMARY KEY (`categoryID`);
+
+ALTER TABLE `orderitem`
+    ADD PRIMARY KEY (`orderItemID`),
+    ADD KEY `1_Order_Many_OrderItems` (`orderID`),
+    ADD KEY `1_Product_Many_OrderItems` (`productID`);
+
+ALTER TABLE `product_category`
+    ADD KEY `1_Product_Many_Categories` (`productID`),
+    ADD KEY `1_Category_Many_Products` (`categoryID`);
+
+ALTER TABLE `product_type`
+    ADD KEY `1_Product_Many_Types` (`productID`),
+    ADD KEY `1_Type_Many_Products` (`typeID`);
+
+ALTER TABLE `transaction`
+    ADD PRIMARY KEY (`tranID`),
+    ADD KEY `1_Order_Many_Transactions` (`orderID`),
+    ADD KEY `1_User_Many_Transactions` (`userID`);
+
+ALTER TABLE `types`
+    ADD PRIMARY KEY (`typeID`);
+
+ALTER TABLE `user`
+    ADD PRIMARY KEY (`userID`);
+
+ALTER TABLE `userorder`
+    ADD PRIMARY KEY (`orderID`),
+    ADD KEY `1_User_Many_Orders` (`userID`);
+
+ALTER TABLE `cart`
+    MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `cartitem`
+    MODIFY `cartItemID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `categories`
+    MODIFY `categoryID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `orderitem`
+    MODIFY `orderItemID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `transaction`
+    MODIFY `tranID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `types`
+    MODIFY `typeID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `user`
+    MODIFY `userID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `userorder`
+    MODIFY `orderID` bigint(20) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 1;
+
+ALTER TABLE `cart`
+    ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
