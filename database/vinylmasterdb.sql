@@ -144,3 +144,10 @@ VALUES (1, 1),
        (28, 6),
        (29, 7),
        (30, 8);
+
+CREATE TABLE `types`
+(
+    `typeID`      bigint(20)  NOT NULL,
+    `p_type_name` varchar(30) NOT NULL,
+    `p_type_desc` text        NOT NULL
+) ;
