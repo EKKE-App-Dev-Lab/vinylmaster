@@ -151,3 +151,16 @@ CREATE TABLE `types`
     `p_type_name` varchar(30) NOT NULL,
     `p_type_desc` text        NOT NULL
 ) ;
+
+CREATE TABLE `types`
+(
+    `typeID`      bigint(20)  NOT NULL,
+    `p_type_name` varchar(30) NOT NULL,
+    `p_type_desc` text        NOT NULL
+) ;
+
+INSERT INTO `types` (`typeID`, `p_type_name`, `p_type_desc`)
+VALUES (1, 'új', 'az új albumokat újként jelölik'),
+       (2, 'kiemelt', 'a nagy érdeklődést kiváltó albumokat kiemeltként jelölik'),
+       (3, 'akciós', 'az akciós termékeket akciós jelölik'),
+       (4, 'legjobb', 'a legjobban fogyó termékeket legjobbként jelölik');
