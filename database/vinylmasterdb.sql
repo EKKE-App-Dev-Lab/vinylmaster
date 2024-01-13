@@ -88,4 +88,34 @@ CREATE TABLE `categories`
     `p_cat_desc` text        NOT NULL
 );
 
+CREATE TABLE `categories`
+(
+    `categoryID` bigint(20)  NOT NULL,
+    `p_cat_name` varchar(30) NOT NULL,
+    `p_cat_desc` text        NOT NULL
+);
 
+
+INSERT INTO `categories` (`categoryID`, `p_cat_name`, `p_cat_desc`)
+VALUES (1, 'Jazz',
+        'A jazz egy amerikai eredetű műfaj, amely a 20. század elején alakult ki. Jellemzően improvizatív jellegű, és gyakran használ swing ritmusokat, valamint hangsúlyos szólóka'),
+       (2, 'Blues',
+        'A blues szintén az Egyesült Államokban gyökerezik, különösen a déli államok afroamerikai közösségeiben. Jellemzője a tizenkét ütemű forma és a mély, érzelmes előadásmód.'),
+       (3, 'Rock ''n'' Roll',
+        'Ez a műfaj a 1950-es években vált népszerűvé, és forradalmasította a populáris zenét. Jellemzően dinamikus ritmusokkal és egyszerű, de energikus dallamokkal operál'),
+       (4, 'Klasszikus Zene',
+        'A klasszikus zenei felvételek között megtalálhatóak a barokk, a klasszikus és a romantikus korszakok nagy szerzőinek művei. Jellemzően komplex szerkezetűek és rendkívül változatos hangszínezettel bírnak'),
+       (5, 'Country',
+        'A country zene a folk zene amerikai változata, amely a vidéki élet élményeire összpontosít. Gyakran használ akusztikus hangszereket, mint a gitár és a hegedű'),
+       (6, 'Soul és R&B',
+        'A soul zene az afroamerikai evangéliumi zenéből és a rhythm and blues-ból fejlődött ki. Jellemzői az érzelmes ének és a hangsúlyos ritmusszekció'),
+       (7, 'Rock',
+        'A rock zene gyökerei a rock ''n'' rollban és a blues-ban találhatók, de az évtizedek során számos alstílus fejlődött ki belőle. Jellemzői közé tartozik a hangsúlyos dob- és elektromos gitár-használat, valamint az erős, gyakran lázadó szövegek.'),
+       (8, 'Pop',
+        'A popzene széles körben elterjedt és sokféle zenei stílust foglal magában. Fő jellemzője a könnyen emészthető, gyakran slágeres jelleg');
+
+CREATE TABLE `product_category`
+(
+    `productID`  bigint(20) NOT NULL,
+    `categoryID` bigint(20) NOT NULL
+);
