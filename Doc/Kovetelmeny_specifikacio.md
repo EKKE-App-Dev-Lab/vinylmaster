@@ -39,7 +39,7 @@ Potenciális eladók pedig kapcsolatba tudnak lépni a céggel és felajánlani 
 
 ## Funkcionális követelmények
 Weboldal létrehozása hozzá kapcsolódó adatbázissal, bemutatkozás, regisztráció, belépés
-1. Felhasználói regisztráció (admin/eladó/vásárló)
+1. Felhasználói regisztráció (eladó/vásárló)
 2. Vásárló regisztráció (felhasználónév, jelszó, e-mail cím elég)
 3. Terméklistázás
     1. kategória menedzsment (előadó, cím, zenei stílus, formátum, állapot)

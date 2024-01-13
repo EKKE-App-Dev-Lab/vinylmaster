@@ -94,13 +94,16 @@ A lábjegyzetben a szokásos hivatkozások (Adatkezelési szabályzat, Felhaszn�
 
 ## Forgatókönyvek
 
-Regisztráció: Az oldal betöltése után a kezdőképernyőn a Felhasználó ikonra kattintva hagyományos bejelentkezési
+Regisztráció: 
+Az oldal betöltése után a kezdőképernyőn a Felhasználó ikonra kattintva hagyományos bejelentkezési
 képernyő jelenik meg, ami felhasználói nevet és jelszót kér, valamint ha még valaki nem felhasználó, akkor ennek
 segítségével tud vevőként regisztrálni. Amennyiben új felhasználóként regisztrál, akkor egy új nyomtatványon meg kell
 adnia a Felhasználói nevét, Vezetéknevét, Keresztnevét, e-mail címét, jelszavát, jelszót mégegyszer valamint egy
 reCAPTCHA-t az automatizált visszaélések miatt.
 Az e-mail címre kiküldésre kerül egy valós e-mail címet megerősítő kérés, utána válik aktívvá a felhasználó.
-Bejelentkezés: Az oldal elindítás után, a navigációs sávon a Bejelentkezés gomb segítségével tudunk belépni a fiókunkba,
+
+Bejelentkezés: 
+Az oldal elindítás után, a navigációs sávon a Bejelentkezés gomb segítségével tudunk belépni a fiókunkba,
 amennyiben már előtte regisztráltunk egyet.
 A gomb lenyomása után megadhatjuk a bejelentkezéshez szükséges adataink (Felhasználónév, Jelszó), és amennyiben helyes
 adatokat adtunk meg, úgy a Bejelentkezés gomb lenyomásával sikeresen beléphetünk a fiókunkba.
