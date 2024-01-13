@@ -16,70 +16,125 @@ CREATE TABLE `products`
 );
 
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('A Love Supreme', 'John Coltrane', 'Spiritual jazz masterpiece', 'Új', 'Jazz', 8500, 'Assets\\images\\products\\alovesupreme.jpg');
+VALUES ('A Love Supreme', 'John Coltrane',
+        'John Coltrane ''A Love Supreme'' című albuma a spirituális jazz zene csúcspontja. Ez az alkotás ötvözi a mély érzelmi tartalmat a zenei újítással, amelynek eredménye egy felejthetetlen zenei élmény.',
+        'Új', 'Jazz', 8500, 'Assets\\images\\products\\alovesupreme.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Time Out', 'Dave Brubeck Quartet', 'Innovative jazz rhythms', 'Új', 'Jazz', 7900, 'Assets\\images\\products\\timeout.jpg');
+VALUES ('Time Out', 'Dave Brubeck Quartet',
+        'A ''Time Out'' az innovatív jazz ritmusokat hozza el hallgatóinak, a Dave Brubeck Quartet előadásában. Az albumon található ''Take Five'' című szám a jazz zene egyik legismertebb darabja lett.',
+        'Új', 'Jazz', 7900, 'Assets\\images\\products\\timeout.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Texas Flood', 'Stevie Ray Vaughan', 'Powerful blues guitar', 'Új', 'Blues', 8100, 'Assets\\images\\products\\texasflood.jpg');
+VALUES ('Texas Flood', 'Stevie Ray Vaughan',
+        'Stevie Ray Vaughan ''Texas Flood'' című albuma a blues zene egyik kiemelkedő alkotása. Vaughan erőteljes gitárjátéka és érzelmekkel teli előadása új életet lehelt a blues műfajba',
+        'Új', 'Blues', 8100, 'Assets\\images\\products\\texasflood.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Born Under a Bad Sign', 'Albert King', 'Blues classic', 'Új', 'Blues', 7600, 'Assets\\images\\products\\bornunderabadsign.jpg');
+VALUES ('Born Under a Bad Sign', 'Albert King',
+        'Albert King ''Born Under a Bad Sign'' albuma a blues zene klasszikusai közé tartozik. King egyedi gitárstílusa és mély, érzelmekkel átitatott előadása az album minden számát emlékezetessé teszi.',
+        'Új', 'Blues', 7600, 'Assets\\images\\products\\bornunderabadsign.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Elvis Presley', 'Elvis Presley', 'The King of Rock \'n\' Roll', 'Új', 'Rock \'n\' Roll', 9000,
-        'Assets\\images\\products\\elvispresley.jpg');
+VALUES ('Elvis Presley', 'Elvis Presley',
+        'Az ''Elvis Presley'' album a rock ''n'' roll királyának, Elvis Presley-nek a korai sikereit örökíti meg. Az album olyan klasszikusokat tartalmaz, mint a ''Heartbreak Hotel'' és ''Blue Suede Shoes''',
+        'Új', 'Rock \'n\' Roll', 9000, 'Assets\\images\\products\\elvispresley.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Chuck Berry Is on Top', 'Chuck Berry', 'Iconic rock \'n\' roll', 'Új', 'Rock \'n\' Roll', 8300,
-        'Assets\\images\\products\\chuckberry.jpg');
+VALUES ('Chuck Berry Is on Top', 'Chuck Berry',
+        'A ''Chuck Berry Is on Top'' album Chuck Berry ikonikus rock ''n'' roll stílusának zsenialitását mutatja be. Számok, mint a ''Johnny B. Goode'', mérföldkövei a rock zene történetének.',
+        'Új', 'Rock \'n\' Roll', 8300, 'Assets\\images\\products\\chuckberry.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('The Four Seasons', 'Vivaldi', 'Baroque masterpiece', 'Új', 'Klasszikus Zene', 9500, 'Assets\\images\\products\\fourseasons.jpg');
+VALUES ('The Four Seasons', 'Vivaldi',
+        'Vivaldi ''Négy évszak'' című műve a barokk zene remekműve. Ezen a lenyűgöző albumon hallható a ''Tavasz'', ''Nyár'', ''Ősz'' és ''Tél'' című kompozíciók, amelyek a természet hangulatát tükrözik.',
+        'Új', 'Klasszikus Zene', 9500, 'Assets\\images\\products\\fourseasons.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Symphony No. 5', 'Beethoven', 'Iconic classical symphony', 'Új', 'Klasszikus Zene', 8800, 'Assets\\images\\products\\beethoven5.jpg');
+VALUES ('Symphony No. 5', 'Beethoven',
+        'Beethoven 5. szimfóniája az egyik legismertebb klasszikus zenei alkotás. A mű drámai kezdete és az átütő erejű fináléja minden hallgatónak mély élményt nyújt',
+        'Új', 'Klasszikus Zene', 8800, 'Assets\\images\\products\\beethoven5.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Golden Hits', 'Johnny Cash', 'Country music legend', 'Új', 'Country', 8200, 'Assets\\images\\products\\johnnycash.jpg');
+VALUES ('Golden Hits', 'Johnny Cash',
+        'Johnny Cash ''Golden Hits'' albuma a country zene legendájának legismertebb dalait gyűjti össze. Az album a ''Folsom Prison Blues'' és ''Ring of Fire'' című slágerekkel betekintést enged Cash gazdag zenei örökségébe',
+        'Új', 'Country', 8200, 'Assets\\images\\products\\johnnycash.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Red Headed Stranger', 'Willie Nelson', 'Classic country products', 'Új', 'Country', 7700, 'Assets\\images\\products\\willienelson.jpg');
+VALUES ('Red Headed Stranger', 'Willie Nelson',
+        'A ''Red Headed Stranger'' Willie Nelson egyik kiemelkedő alkotása, amely a klasszikus country zene esszenciáját tükrözi. Az album történetmesélő stílusa és Nelson egyedi hangja mélyen megérinti a hallgatót',
+        'Új', 'Country', 7700, 'Assets\\images\\products\\willienelson.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('What\'s Going On', 'Marvin Gaye', 'Soulful social commentary', 'Új', 'Soul és R&B', 8600, 'Assets\\images\\products\\whatsgoingon.jpg');
+VALUES ('What\'s Going On', 'Marvin Gaye',
+        'Marvin Gaye ''What''s Going On'' című albuma a soul zene mérföldköve. A társadalmi kommentárokkal teli számok, mint a címadó ''What''s Going On'', új dimenziót nyitottak a soul zene világában.',
+        'Új', 'Soul és R&B', 8600, 'Assets\\images\\products\\whatsgoingon.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Lady Soul', 'Aretha Franklin', 'The Queen of Soul', 'Új', 'Soul és R&B', 8000, 'Assets\\images\\products\\ladysoul.jpg');
+VALUES ('Lady Soul', 'Aretha Franklin',
+        'Aretha Franklin ''Lady Soul'' albuma méltán viseli a soul királynője címét. Az albumon olyan örökzöld slágerek találhatók, mint a ''Respect'' és ''Chain of Fools'', melyek a soul zene klasszikusai lettek',
+        'Új', 'Soul és R&B', 8000, 'Assets\\images\\products\\ladysoul.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Thriller', 'Michael Jackson', 'Best-selling products of all time', 'Új', 'Pop', 10000, 'Assets\\images\\products\\thriller.jpg');
+VALUES ('Thriller', 'Michael Jackson',
+        'Michael Jackson ''Thriller'' albuma az egyik legjobban eladott lemez minden időkben. Az album úttörő jelentőségű a pop zenei videók terén, és olyan híres dalokat tartalmaz, mint a ''Billie Jean'' és a ''Beat It''',
+        'Új', 'Pop', 10000, 'Assets\\images\\products\\thriller.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('1989', 'Taylor Swift', 'Modern pop classic', 'Új', 'Pop', 8500, 'Assets\\images\\products\\1989.jpg');
+VALUES ('1989', 'Taylor Swift',
+        'Taylor Swift ''1989'' című albuma a modern pop zene egyik meghatározó alkotása. Az album Swift zenei stílusának érett változását mutatja be, és slágereket tartalmaz, mint a ''Shake It Off'' és ''Blank Space''',
+        'Új', 'Pop', 8500, 'Assets\\images\\products\\1989.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Dark Side of the Moon', 'Pink Floyd', 'Psychedelic rock masterpiece', 'Új', 'Rock', 9500,
-        'Assets\\images\\products\\darksideofthemoon.jpg');
+VALUES ('Dark Side of the Moon', 'Pink Floyd',
+        'A ''Dark Side of the Moon'' a Pink Floyd pszichedelikus rock remekműve. Az album zenei újításai és konceptuális mélysége jelentősen befolyásolta a rock zenei műfaj',
+        'Új', 'Rock', 9500, 'Assets\\images\\products\\darksideofthemoon.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Led Zeppelin IV', 'Led Zeppelin', 'Iconic rock products', 'Új', 'Rock', 9200, 'Assets\\images\\products\\ledzeppeliniv.jpg');
+VALUES ('Led Zeppelin IV', 'Led Zeppelin',
+        'A ''Led Zeppelin IV'' album ikonikus darabja a rock zenének. Olyan híres dalokat tartalmaz, mint a ''Stairway to Heaven'' és ''Black Dog'', amelyek meghatározták a ''70-es évek rock zenéjét.',
+        'Új', 'Rock', 9200, 'Assets\\images\\products\\ledzeppeliniv.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('10', 'Tankcsapda', 'Magyar rock zene', 'Új', 'Rock', 7800, 'Assets\\images\\products\\tankcsapda10.jpg');
+VALUES ('10', 'Tankcsapda',
+        'A ''10'' a Tankcsapda magyar rock zenekar egyik meghatározó albuma. Az albumon található energikus és őszinte dalok, mint a ''Mennyország tourist'', a magyar rock zene jeles képviselői.',
+        'Új', 'Rock', 7800, 'Assets\\images\\products\\tankcsapda10.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Best of Edda', 'Edda Művek', 'Magyar rock klasszikusok', 'Új', 'Rock', 7700, 'Assets\\images\\products\\eddamuvek.jpg');
+VALUES ('Best of Edda', 'Edda Művek',
+        'Az ''Edda Művek Best of'' albuma a magyar rock zene klasszikus darabjait gyűjti össze. Az album dalai, mint a ''Kölyköd voltam'' és ''A kör'', generációk kedvenceivé váltak.',
+        'Új', 'Rock', 7700, 'Assets\\images\\products\\eddamuvek.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Homework', 'Daft Punk', 'French electronic duo debut', 'Új', 'Electronic', 8900, 'Assets\\images\\products\\homework.jpg');
+VALUES ('Homework', 'Daft Punk',
+        'A Daft Punk ''Homework'' albuma a francia elektronikus zenei duo debütáló lemeze. Az album innovatív keveréke a house, techno és disco hangzásoknak, új irányt mutatott az elektronikus zenében.',
+        'Új', 'Electronic', 8900, 'Assets\\images\\products\\homework.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Selected Ambient Works 85-92', 'Aphex Twin', 'Ambient techno pioneer', 'Új', 'Electronic', 8200,
-        'Assets\\images\\products\\aphextwin.jpg');
+VALUES ('Selected Ambient Works 85-92',
+        'Az ''Aphex Twin Selected Ambient Works 85-92'' albuma az ambient techno zene egyik úttörője. Richard D. James álneve alatt készült ez az album, amely zenei kísérleteivel és innovatív hangzásával hatással volt a későbbi elektronikus zenei alkotásokra',
+        'Ambient techno pioneer', 'Új', 'Electronic', 8200, 'Assets\\images\\products\\aphextwin.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Illmatic', 'Nas', 'East Coast hip-hop classic', 'Új', 'Hip-Hop', 8700, 'Assets\\images\\products\\illmatic.jpg');
+VALUES ('Illmatic', 'Nas',
+        'Nas ''Illmatic'' albuma az East Coast hip-hop egyik klasszikusa. Az album mély társadalmi és személyes témákat ölel fel, és olyan emblematikus dalokat tartalmaz, mint a ''N.Y. State of Mind'' és ''The World Is Yours''',
+        'Új', 'Hip-Hop', 8700, 'Assets\\images\\products\\illmatic.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('The Chronic', 'Dr. Dre', 'West Coast rap landmark', 'Új', 'Hip-Hop', 9000, 'Assets\\images\\products\\thechronic.jpg');
+VALUES ('The Chronic', 'Dr. Dre',
+        'Dr. Dre ''The Chronic'' albuma a West Coast rap zene egyik mérföldköve. Az album jelentős hatással volt a hip-hop zenére a ''90-es években, és olyan klasszikus dalokat tartalmaz, mint a ''Nuthin'' But a ''G'' Thang'' és ''Dre Day''',
+        'Új', 'Hip-Hop', 9000, 'Assets\\images\\products\\thechronic.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Blue', 'Joni Mitchell', 'Folk music masterpiece', 'Új', 'Folk', 8300, 'Assets\\images\\products\\blue.jpg');
+VALUES ('Blue', 'Joni Mitchell',
+        'Joni Mitchell ''Blue'' albuma a folk zene remekműve. Az album személyes és érzelmes dalokkal teli, amelyek mélyen megérintik a hallgatókat, mint például a ''River'' és ''A Case of You''e',
+        'Új', 'Folk', 8300, 'Assets\\images\\products\\blue.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Táncdalok', 'Kovács Kati', 'Magyar népzene', 'Új', 'Folk', 7500, 'Assets\\images\\products\\kovacskati.jpg');
+VALUES ('Táncdalok', 'Kovács Kati',
+        'Kovács Kati ''Táncdalok'' albuma a magyar népzene klasszikusai közé tartozik. Az albumon szereplő dalok, mint a ''Most kéne abbahagyni'' és ''Nem leszek a játékszered'', a magyar popzene meghatározó darabjai.e',
+        'Új', 'Folk', 7500, 'Assets\\images\\products\\kovacskati.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Master of Puppets', 'Metallica', 'Thrash metal essential', 'Új', 'Metal', 9200, 'Assets\\images\\products\\masterofpuppets.jpg');
+VALUES ('Master of Puppets', 'Metallica',
+        'A Metallica ''Master of Puppets'' albuma a thrash metal zene egyik alapköve. Az album energikus és technikailag kifinomult zenéje új mércét állított a heavy metal számára',
+        'Új', 'Metal', 9200, 'Assets\\images\\products\\masterofpuppets.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Paranoid', 'Black Sabbath', 'Heavy metal originators', 'Új', 'Metal', 8600, 'Assets\\images\\products\\paranoid.jpg');
+VALUES ('Paranoid', 'Black Sabbath',
+        'A Black Sabbath ''Paranoid'' albuma a heavy metal zene meghatározó alkotása. Az album olyan ikonikus dalokat tartalmaz, mint a ''Paranoid'' és ''Iron Man'', amelyek a metal zene alapkövei',
+        'Új', 'Metal', 8600, 'Assets\\images\\products\\paranoid.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Legend', 'Bob Marley', 'Reggae icon compilation', 'Új', 'Reggae', 8400, 'Assets\\images\\products\\legend.jpg');
+VALUES ('Legend', 'Bob Marley',
+        'Bob Marley ''Legend'' albuma a reggae zene legismertebb és legnépszerűbb gyűjteménye. Az albumon található dalok, mint a ''No Woman, No Cry'' és ''Redemption Song'', Marley örökségének esszenciális részét képezik.',
+        'Új', 'Reggae', 8400, 'Assets\\images\\products\\legend.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Duppy Conqueror', 'Bob Marley & The Wailers', 'Roots reggae essential', 'Új', 'Reggae', 7900,
-        'Assets\\images\\products\\duppyconqueror.jpg');
+VALUES ('Duppy Conqueror', 'Bob Marley & The Wailers',
+        'A ''Duppy Conqueror'' Bob Marley & The Wailers egyik kulcsalbuma, amely a roots reggae zene esszenciáját mutatja be. Az album dalaiban Marley spirituális üzenetei és a reggae zenei stílusa találkozik.',
+        'Új', 'Reggae', 7900, 'Assets\\images\\products\\duppyconqueror.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Álomarcú lány', 'Presser Gábor', 'Magyar pop zene', 'Új', 'Pop', 7800, 'Assets\\images\\products\\alomarculany.jpg');
+VALUES ('Álomarcú lány', 'Presser Gábor',
+        'Presser Gábor ''Álomarcú lány'' című albuma a magyar pop zene kiemelkedő darabja. Az album dalai, mint a címadó ''Álomarcú lány'' és ''Neked írom a dalt'', Presser egyedi zenei stílusát és zeneszerzői tehetségét mutatják be',
+        'Új', 'Pop', 7800, 'Assets\\images\\products\\alomarculany.jpg');
 INSERT INTO `products` (albumcim, eloado, leiras, allapot, kategoria, ar, boritokep)
-VALUES ('Best of Zséda', 'Zséda', 'Magyar pop slágerek', 'Új', 'Pop', 7600, 'Assets\\images\\products\\zsedabestof.jpg');
+VALUES ('Best of Zséda', 'Zséda',
+        'A ''Best of Zséda'' album Zséda legnépszerűbb magyar pop slágereit gyűjti össze. Az albumon olyan ismert dalok találhatók, mint a ''Mint a film'' és ''Asszony leszek'', amelyek a modern magyar popzene fontos pillanatai.',
+        'Új', 'Pop', 7600, 'Assets\\images\\products\\zsedabestof.jpg');
 
 CREATE TABLE `categories`
 (
@@ -188,7 +243,7 @@ CREATE TABLE `types`
     `typeID`      bigint(20)  NOT NULL,
     `p_type_name` varchar(30) NOT NULL,
     `p_type_desc` text        NOT NULL
-) ;
+);
 
 INSERT INTO `types` (`typeID`, `p_type_name`, `p_type_desc`)
 VALUES (1, 'új', 'az új albumokat újként jelölik'),
