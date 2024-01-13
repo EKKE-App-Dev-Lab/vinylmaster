@@ -164,3 +164,22 @@ VALUES (1, 'új', 'az új albumokat újként jelölik'),
        (2, 'kiemelt', 'a nagy érdeklődést kiváltó albumokat kiemeltként jelölik'),
        (3, 'akciós', 'az akciós termékeket akciós jelölik'),
        (4, 'legjobb', 'a legjobban fogyó termékeket legjobbként jelölik');
+
+CREATE TABLE `user`
+(
+    `userID`       bigint(20)   NOT NULL,
+    `uname`        varchar(50)  NOT NULL,
+    `pass`         varchar(100) NOT NULL,
+    `fname`        varchar(50)  NOT NULL,
+    `lname`        varchar(50)  NOT NULL,
+    `email`        varchar(50)  NOT NULL,
+    `address`      varchar(60)  NOT NULL,
+    `phone`        varchar(8)   NOT NULL,
+    `description`  text         NOT NULL,
+    `vkey`         varchar(100) NOT NULL,
+    `verified`     tinyint(1)   NOT NULL,
+    `isSubscribed` tinyint(1)   NOT NULL,
+    `isAdmin`      tinyint(1)   NOT NULL,
+    `createDate`   timestamp    NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+);
+
