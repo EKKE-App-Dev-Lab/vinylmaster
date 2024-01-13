@@ -302,39 +302,7 @@ ALTER TABLE `userorder`
     ADD PRIMARY KEY (`orderID`),
     ADD KEY `1_User_Many_Orders` (`userID`);
 
-ALTER TABLE `cart`
-    MODIFY `cartID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
 
-ALTER TABLE `cartitem`
-    MODIFY `cartItemID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `categories`
-    MODIFY `categoryID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `orderitem`
-    MODIFY `orderItemID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `transaction`
-    MODIFY `tranID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `types`
-    MODIFY `typeID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `user`
-    MODIFY `userID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `userorder`
-    MODIFY `orderID` bigint(20) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 1;
-
-ALTER TABLE `cart`
-    ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
+
 
