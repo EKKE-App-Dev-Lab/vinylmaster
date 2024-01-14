@@ -85,3 +85,38 @@ hr{
     padding: 15px;
 }
 /* End User Profil */
+
+
+/*Start Login & Regisztráció Panel*/
+.login-page {
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.login-header h3{
+    font-size: 30px;
+}
+
+.login-header p{
+    font-size: 20px;
+}
+
+.login-page .form .login{
+    margin-top: -31px;
+    margin-bottom: 26px;
+}
+
+.login-form span{
+    font-size: 20px;
+    color: red;
+}
+
+.form {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 25px;
+    text-align: center;
+}
