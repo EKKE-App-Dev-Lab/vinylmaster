@@ -65,6 +65,22 @@ Biztonsági funkciók közé tartozik, hogy van adminisztrátori fiók. Az admin
 
 ## 9. Adatbázis terv
 
+A Vinylmaster webshop által hazsnált MySQL adatbázis, a vinylmasterdb, egy olyan adatbázis-rendszer, amelyet úgy
+terveztünk, hogy kezelje az online hanglemezbolt adatait. A struktúra több táblát tartalmaz, mint például products,
+categories, product_category, types, product_type, user, cart, cartitem, userorder, orderitem, és transaction.
+
+Ebben a rendszerben a products tábla tárolja az eladásra kínált hanglemezek adatait, beleértve az előadó nevét, az album
+címét, leírását, állapotát, kategóriáját, árát, és a borító képét. A categories és types táblák különböző kategóriákat
+és típusokat definiálnak, amelyeket aztán a product_category és product_type táblákon keresztül kapcsolnak össze a
+termékekkel.
+
+A user tábla a felhasználók adatait tárolja, beleértve a felhasználónevet, jelszót, nevet, e-mail címet, címet,
+telefonszámot, és további információkat. A vásárlási folyamatot a cart, cartitem, userorder, orderitem, és transaction
+táblák kezelik, amelyek a kosárba helyezett termékeket, a megrendeléseket és a tranzakciókat követik nyomon.
+
+Az alábbi ábra mutatja az adatbázis felépítését:
+
+![img.png](adatbazis.png)
 
 
 ## 10. Implementációs terv
