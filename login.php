@@ -93,3 +93,77 @@ function test_input($data) {
     return $data;
 }
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en-MU">
+<head>
+    <meta charset="utf-8">
+    <title>VINYLMASTER | BEJELENTKEZÉS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS File-->
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <link rel="stylesheet" type="text/css" href="Account.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0e16635bd7.js" crossorigin="anonymous"></script>
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Animate CSS -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>VINYLMASTER | Bejelentkezés</title>
+</head>
+
+<body>
+<?php $page = 'login';?>
+
+<!--Start Navigation Bar-->
+<?php include './Includes/MobileNavBar.php';?>
+<!--End Navigation Bar-->
+
+
+<!--Start Navigation Bar @media 1200px-->
+<?php include './Includes/PcNavBar.php';?>
+<!--End Navigation Bar @media 1200px-->
+
+
+<!--Start Background Image-->
+<div class="bg-image-container">
+    <div class="bg-image"></div>
+</div>
+<!--End Background Image-->
+
+
+<!--Start Login Panel-->
+<div class="login-page">
+    <div class="form">
+        <div class="login">
+            <div class="login-header">
+                <h3>BEJELENTKEZÉS</h3>
+                <p>Kérjük, adja meg az azonosítóit a bejelentkezéshez.</p>
+            </div>
+        </div>
+
+        <form class="login-form" method="post" actions="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <input type="text" name="uname" placeholder="Felhasználónév" value="<?php echo $uname;?>"/>
+            <input type="password" name="password" placeholder="Jelszó"/>
+            <span class="Password-Error"><?php if($errCriteria != ""){echo "$errCriteria <br><br>";}?></span>
+
+            <button>bejelentkezés</button>
+            <p class="message">Nem regisztrált? <a href="registration.php">Regisztráció</a></p>
+            <br><span class="forget-text"><a href="forgetPassword.php">Elfelejtette jelszavát?</a></span>
+            <!-- <p class="or-message"><b>OR</b></p> -->
+        </form>
+
+        <!-- <div class="social-login">
+            <span class="login-text">Login with: </span>
+            <span><a><i class="fab fa-facebook-f"></i></a></span>
+            <span><a><i class="fab fa-twitter"></i></a></span>
+            <span><a><i class="fab fa-google-plus-g"></i></a></span>
+        </div> -->
+    </div>
+</div>
+<!--End Login Panel-->
+
+</body>
+</html>
