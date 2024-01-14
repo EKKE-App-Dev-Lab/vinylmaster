@@ -68,6 +68,47 @@
         <script src="Javascript/SlideshowAuto.js"></script>
         <!--End Slideshow -->
 
+
+        <!--Start Wave Image-->
+        <div class="wave-image-group">
+            <div class="wave-image">
+                <img src="Assets/images/1.index/NavBar_WaveWhite.png">
+            </div>
+        </div>
+        <!--End Wave Image-->
+
+        <!--Start Mit tudunk adni-->
+        <div class="what-you-can-do">
+            <div class="subtitle">
+                <h2>AJÁNLATAINK</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="column">
+                    <i class="fas fa-solid fa-record-vinyl"  style="color: black;"></i>
+                    <span class="what-you-can-do-subtitle buy-our-cake">Eredeti lemezek</span>
+                    <span class="what-you-can-do-text">Válogass eredeti bakelit relikviáinkból és rendeld meg online!</span>
+                </div>
+
+                <div class="column">
+                    <i class="fas fa-solid fa-industry"  style="color: black;"></i>
+                    <span class="what-you-can-do-subtitle customize-cake">Készíts saját lemezt</span>
+                    <span class="what-you-can-do-text">Küldd el nekünk a digitális zenei listádat és borítóterved, és mi elkészítjük a saját, egyedi bakelit lemezedet</span>
+                </div>
+                
+                <div class="column">
+                    <i class="fas fa-solid fa-star"  style="color: black;"></i>
+                    <span class="what-you-can-do-subtitle create-box">Új kiadású lemezek</span>
+                    <span class="what-you-can-do-text">Találd meg korunk előadóinak limitált kiadású példányait</span>
+                </div>
+
+            </div>
+         </div>
+
+        </div>
+        <!--End Mit tudunk adni-->
+
         <!--Különleges ajánlat-->
         <section class="offer-section">
             <div class="offer-bg">
@@ -123,7 +164,7 @@
             </div>
         </div>
         <!--End Wave Image Flip-->
-        
+
 
         <!-- Start Mesterünk-->
         <div class="our-baker">
