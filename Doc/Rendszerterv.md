@@ -140,18 +140,16 @@ A funkcionalitás és esztétika szorosan összefonódott a tervezési folyamat 
 
 Főbb oldalak:
 
-index.php, amely minden felhasználó számára először jelenik meg.
+* **index.php**, amely minden felhasználó számára először jelenik meg.
 
-products.php, regisztrált és nem regisztrált felhasználók is ezen az oldalon böngészhetik a webshop kínálatát.
+* **products.php**, regisztrált és nem regisztrált felhasználók is ezen az oldalon böngészhetik a webshop kínálatát. A termékek rendezése és zenei stílus szerinti szűrése is eléhető funkció.
 
-belepve.html, amely az adminisztrátor könyvtáros bejelentkezése után jelenik meg. Ez a kezdőoldal Belépés menüpontján keresztül elérhető.
+* **makeyourvinyl.php**, amely egy páratlan szolgáltatást lehetőségét mutatja be a vásárló számára
 
-Megjegyzések:
+* **about.php**, a csapat tagjait és a céget bemutató oldal
 
-Adminisztrátori jogosultsággal nem rendelkező könyvtáros menürendszere annyiban tér el a fentitől, hogy a Könyvtáros menüpont nem szerepel az oldalán, mint az a Menühierarchia fejezetben is ismertetésre került.
-
-Az Egyszerű keresés és az Részletes keresés oldalak elérhetők a kezdőlapról és belépést követően is, azonban a keresés eredménye oldalak a kezdőlapra visznek vissza, megváltozik a menürendszer, ez tekinthető a prototípus hiányosságának, azonban a keresési folyamatot így is demonstrálja a weboldal.
-
+* **contact.php**, a kapcsolatfelvétel részleteinek bemutatására
+* **cart.php**, a bejelentkezett felhasználó kosár tartalmának megjelenítéséhez
 
 ## 6. Fizikai környezet
 Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes operációs rendszer és az ehhez megfelelő hardverrel ellátott eszköz.
