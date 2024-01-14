@@ -53,3 +53,30 @@ Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes oper�
 
 Kliens oldalon egy modern böngészőt futtatni képes operációs rendszerre van szükség (és ettől függően egy megfelelő hardverrel ellátott eszközre). Az oldal struktúrájáért a HTML, a megjelenítésért a CSS valamint Bootstrap és az interakciókért a JavaScript felelős.
 
+## 7. Absztrakt domain modell
+
+
+
+## 8. Architekturális terv
+
+A rendszer folyamatosan bővíthető az eladó által. Új termékeket vihet fel, valamint módosíthatja és törölheti a meglévőket.
+
+Biztonsági funkciók közé tartozik, hogy van adminisztrátori fiók. Az adminisztrátor minden regisztrált felhasználó adatát láthatja és kezelheti, kivéve a jelszót, mivel az titkosítva van eltárolva. Minden felhasználó csak a saját adatait módosíthatja.
+
+## 9. Adatbázis terv
+
+
+
+## 10. Implementációs terv
+
+
+
+## 11. Tesztterv
+
+
+
+## 12. Telepítési terv
+
+
+
+## 13. Karbantartási terv
