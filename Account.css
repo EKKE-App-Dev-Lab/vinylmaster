@@ -319,7 +319,7 @@ hr{
         background-size: cover;
     }
     /*End Bg Kép a jelszó változtató oldalhoz*/
-    
+
 
     /*Start Login Panel*/
     .login-page {
@@ -349,7 +349,7 @@ hr{
         text-align: center;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     }
-    
+
     .form input {
         font-family: "Roboto", sans-serif;
         outline: 0;
@@ -497,3 +497,47 @@ hr{
         font-size: 40px;
         letter-spacing: 2.2pt;
     }
+    
+    .user-logout{
+        padding-left: 100px;
+    }
+
+    .user-logout span{
+        color:white;
+    }
+
+    .user-logout i{
+        color:white;
+    }
+
+    .change-password-container h3{
+        color: orangered;
+        font-size:25px;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .danger-zone {
+        border: solid red;
+        border-style: groove;
+    }
+
+    .danger-zone .change-password-container h3{
+        color: red;
+    }
+
+    .danger-zone-inside {
+        padding: 15px;
+    }
+
+    .container h3{
+        font-weight: 300;
+        font-size: 35px;
+    }
+
+    /* End User Profil Felírat*/
+}
+/*---------------------------------------------------------------------------------------------*/
+/*END MEDIA QUERY FOR LOGIN.PHP, REGISTRATION.PHP, USERACCOUNT.PHP, ADMINPANEL.PHP*/
+/*---------------------------------------------------------------------------------------------*/
