@@ -43,7 +43,49 @@
         </div>
         <!--End Wave Image-->
 
+
+        <!--Start Slideshow-->
+        <div class="slideshow-container">
+
+            <!-- Full-width képek számmal és felirat szöveggel -->
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_1.jpg" style="width:100%">
+            <div class="text">"MERT ZENE NÉLKÜL MIT ÉREK ÉN?"</div>
+            </div>
         
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_2.jpg" style="width:100%">
+            <div class="text">"Ó, AZ ÖREG BAKELIT, MÉG MINDIG TUDTHAT VALAMIT!"</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_3.jpg" style="width:100%">
+            <div class="text">"FURCSA ÉRZÉS A NOSZTALGIA, NÉHA ENGEM IS MEGTALÁL. EGY ÖRÖKZÖLD A FÜLEMBE KÚSZIK, SOHA NEM HATHAT RÁ A HALÁL."</div>
+            </div>
+            
+        </div>
+
+        <script src="Javascript/SlideshowAuto.js"></script>
+        <!--End Slideshow -->
+
+        <!--Különleges ajánlat-->
+        <section class="offer-section">
+            <div class="offer-bg">
+                <div class="offer-data">
+                    <div class="subtitle">
+                        <h2>KÜLÖNLEGES AJÁNLAT</h2>
+                    </div>
+                    <p class="offer-description">Újévi Ajánlatunk véget ér: </p>
+                    <p class="offer-description" id="countdown" style="font-family: Old Standard TT; font-size: 2rem;">AJÁNLAT VÉGE</p>
+
+                    <div class="subscribe-button-container">
+                        <a href="products.php"><button class="subscribe-button" name="subscribe">VÁSÁROLJ MOST</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Különleges ajánlat vége-->
+
 
         <!-- Start Google Map-->
             <?php include './Includes/GoogleMap.php';?>
