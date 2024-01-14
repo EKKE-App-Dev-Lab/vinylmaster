@@ -172,6 +172,18 @@ Az alábbi ábra mutatja az adatbázis felépítését:
 
 ## 12. Telepítési terv
 
+Helyi gépre való telepítés esetén a következőkre lesz szükség:
+- Egy webszerver környezetre, ami tudja az Apache/PHP/MySQL hármast.
+- Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel ellátott eszköz).
+- Egy modern böngésző.
 
+Webtárhelyre való telepítés esetén a következőkre lesz szükség:
+- Egy a Apache/PHP/MySQL hármast támogató tárhely.
+- Egy program, amivel FTP kapcsolaton keresztül feltölthetők a webalkalmazás fájljai.
+- Egy modern böngésző.
 
 ## 13. Karbantartási terv
+
+A platform nem igényel jelentős karbantartást. Főként az adatok és az adatbázis szerver felügyeletével kapcsolatos teendők kapcsolódhatnak a karbantartáshoz. 
+Bejövő adatbázis kéréseket monitorozni kell és esetenként optimalizálni, amennyiben nagy a terheltség.
+Funkcionalitás bővítése esetén merülhetnek fel problémák, ezen problémák elkerülésének érdekében bővítés esetén precízen kell megtervezni az új verziókat.
