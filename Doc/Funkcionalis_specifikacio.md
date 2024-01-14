@@ -6,7 +6,7 @@ A megrendelő részéről kaptunk néhány weboldal linket, amihez hasonlót sze
 
 ## Célok
 
-A weboldal esetlőges célja lemezek bemutatása rendezhetően és az egyszerű vásárlási lehetőség.
+A weboldal elsődleges célja lemezek bemutatása rendezhetően és az egyszerű vásárlási lehetőség.
 
 A vásárláshoz a vevőknek regisztrációra van szükség, vásárolni kizárólag regisztrált felhasználóknak szabad, de a
 későbbiekben is visszatérhetnek az oldalra.
