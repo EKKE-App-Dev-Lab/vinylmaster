@@ -45,6 +45,98 @@
         </div>
         <!--End Fejléc-->
 
+
+        <!--Start Mester Info-->
+        <div class="baker-info-group">
+            <div class="baker-info-container">
+                <div class="baker-info-text">
+                    <div class="baker-info-title">
+                        <span>Mesterünk</span>
+                    </div>
+        
+                    <div class="baker-name">
+                        <span>KONNER SÁRA</span>
+                    </div>
+        
+                    <div class="baker-description">
+                        <p>“Madonna - Erotica, The Rolling Stones - Promotional, Rolling Stones - Their Satanic Majesties Request, Dark - Dark Round The Edges, The Bread And Beer - LP, The Quarrymen,Sex Pistols - God Save The Queen. Ez csak pár lemez, a legsikeresebbek közül.”</p>
+                    </div>
+        
+                    <div class="baker-signature">
+                        <div class="signature-photo"></div>
+                    </div>
+        
+                    <div class="baker-position">
+                        <span>CEO - VINYLMASTER Bakelit Lemezbolt</span>
+                    </div>
+                </div>
+                
+                <div class="baker-photo-group">
+                    <div class="baker-photo"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Mester Info-->
+        
+
+        <!--Start Kitüntetések-->
+        <div class="award-section">
+            <div class="award-title">
+                <span>Kitüntetéseink</span>
+            </div>
+
+            <div class="subtitle">
+                <h2>DÍJNYERTES</h2>
+            </div>
+
+            <div class="award-badge-container">
+                <div class="award-badge-group">
+                    <div class="badge badge1">
+                        <div class="badge-photo-group">
+                            <div class="badge-photo"></div>
+                        </div>
+                        
+                        <div class="badge-info">
+                            <span class="badge-title">A ÉV LEMEZBOLTJA</span>
+                            <span class="badge-date">2010-2011</span>
+                            <p class="badge-description">Legtöbb eladott minőségi bakelit lemez Magyarországon!</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="award-badge-group">
+                    <div class="badge badge2">
+                        <div class="badge-photo-group">
+                            <div class="badge-photo"></div>
+                        </div>
+                        
+                        <div class="badge-info">
+                            <span class="badge-title">A ÉV LEMEZBOLTJA</span>
+                            <span class="badge-date">2015-2016</span>
+                            <p class="badge-description">Legtöbb eladott minőségi bakelit lemez Magyarországon!</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="award-badge-group">
+                    <div class="badge badge3">
+                        <div class="badge-photo-group">
+                            <div class="badge-photo"></div>
+                        </div>
+                        
+                        <div class="badge-info">
+                            <span class="badge-title">AZ ÉV BAKELIT LEMEZ KÉSZÍTŐJE</span>
+                            <span class="badge-date">2019-2020</span>
+                            <p class="badge-description">Legtöbb minőségi bakelit lemez elkészítését és forgalomba helyezését végezte Magyarországon 2019-ben!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Kitüntetések-->
+
+
+
         <!-- Start Google Map-->
             <?php include './Includes/GoogleMap.php';?>
         <!-- End Google Map-->
