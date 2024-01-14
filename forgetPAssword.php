@@ -55,7 +55,7 @@
                         $to = $row['email'];
                         $subject = "Jelszó visszaállítása";
                         $message = "Username: <b>$uname</b><br>Jelszó: <b>$newPassword</b><br><br><b>Belépés után egyből változtasd meg a jelszavad.</b>";
-                        $headers = "From: malako.cakeshop@gmail.com \r\n";
+                        $headers = "From: asd.asd@gmail.com \r\n";
                         $headers .= "MIME-Version: 1.0" . "\r\n";
                         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
