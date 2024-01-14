@@ -22,6 +22,7 @@ include "./AdditionalPHP/startSession.php";
 
 <?php include './Includes/PcNavBar.php';?>
 
+<!--
 <div class="what-you-can-do">
     <div class="subtitle">
         <h2>Külünleges szolgáltatásunk</h2>
@@ -53,7 +54,91 @@ include "./AdditionalPHP/startSession.php";
     </div>
 
 </div>
+-->
+        <!--Start Wave Image-->
+        <div class="wave-image-group-media1200">
+            <div class="wave-image-flip-media1200">
+                <img src="Assets/images/1.index/NavBar_WaveWhiteThinFlip.png">
+            </div>
+        </div>
+        <!--End Wave Image-->
 
+
+        <!--Start Slideshow-->
+        <div class="slideshow-container">
+
+            <!-- Full-width képek számmal és felirat szöveggel -->
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_4.jpg" style="width:100%">
+            <div class="text">Ébreszd Fel Saját Hangodat - Egyedi Bakelit Lemezekkel!</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_5.jpg" style="width:100%">
+            <div class="text">Saját Bakelit Lemez Készítés - Ahol a Zene Összetalálkozik az Örökséggel!</div>
+            </div>
+
+            <div class="mySlides fade">
+            <img src="Assets/images/1.index/Slide_6.jpg" style="width:100%">
+            <div class="text">Álmodtál már arról, hogy a kedvenc zenéidet, egyedi hangfelvételeidet, vagy akár saját szerzeményeidet bakelit lemezen hallgasd?</div>
+            </div>
+
+        </div>
+
+        <script src="Javascript/SlideshowAuto.js"></script>
+        <!--End Slideshow -->
+
+
+        <!--Start Wave Image-->
+        <div class="wave-image-group">
+            <div class="wave-image">
+                <img src="Assets/images/1.index/NavBar_WaveWhite.png">
+            </div>
+        </div>
+        <!--End Wave Image-->
+
+        <!--Start Mit tudunk adni-->
+        <div class="what-you-can-do">
+            <div class="subtitle">
+                <h2>KÜLÖNLEGES SZOLGÁLTATÁSUNK</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="column">
+                    <span class="what-you-can-do-subtitle create-box">Egyedi Gyártás, Személyre Szabott Élmény</span>
+                    <span class="what-you-can-do-text">Minden bakelit lemez, amit készítünk, egyedi műalkotás...</span>
+                </div>
+
+                <div class="column">
+                    <span class="what-you-can-do-subtitle buy-our-cake">Kiváló Minőségű Anyagok és Professzionális Technika</span>
+                    <span class="what-you-can-do-text">Csak a legjobb minőségű anyagokat és legmodernebb technikákat használjuk, hogy biztosítsuk a kiváló hangzást és tartósságot.</span>
+                </div>
+
+                <div class="column">
+                    <span class="what-you-can-do-subtitle customize-cake">Személyre Szabott Borítók és Kreatív Design</span>
+                    <span class="what-you-can-do-text">Adj hozzá egy személyes érintést a bakelit lemezedhez egyedi borítótervezéssel. Művészeink segítenek abban, hogy a borító tökéletesen tükrözze a lemez tartalmát.</span>
+                </div>
+                
+            </div>
+         </div>
+
+        </div>
+        <!--End Mit tudunk adni-->
+
+        <!--Különleges ajánlat-->
+        <section class="offer-section">
+            <div class="offer-bg">
+                <div class="offer-data">
+                    <div class="subtitle">
+                        <h2>Ajánlatunk</h2>
+                    </div>
+                        <p class="offer-data">Rendelj Most és Ébreszd Fel Saját Hangodat! Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a <a href="mailto:vinylmasters@gmail.com?subject=Saját Bakelit Rendelés">vinylmasters@gmail.com</a>címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Különleges ajánlat vége-->
 
 <footer class="footer-group">
 
