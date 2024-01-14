@@ -182,3 +182,78 @@ function test_input($data) {
     return $data;
 }
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en-MU">
+<head>
+    <meta charset="utf-8">
+    <title>VINYLMASTER | REGISZTRÁCIÓ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS File-->
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <link rel="stylesheet" type="text/css" href="Account.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0e16635bd7.js" crossorigin="anonymous"></script>
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Animate CSS -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+<?php $page = 'login';?>
+
+<!--Start Navigation Bar-->
+<?php include './Includes/MobileNavBar.php';?>
+<!--End Navigation Bar-->
+
+
+<!--Start Navigation Bar @media 1200px-->
+<?php include './Includes/PcNavBar.php';?>
+<!--End Navigation Bar @media 1200px-->
+
+
+<!--Start Background Image-->
+<div class="bg-image-container">
+    <div class="bg-image-join"></div>
+</div>
+<!--End Background Image-->
+
+
+<!--Start Login Panel-->
+<div class="login-page reg-page">
+    <div class="form">
+        <div class="login">
+            <div class="login-header">
+                <h3>REGISZTRÁCIÓ</h3>
+                <p>Kérlek add meg a szükséges adatokat a regisztrációhoz!</p>
+            </div>
+        </div>
+
+        <form class="login-form" method="post" actions="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <span class="Uname-Error"><?php echo $unameCriteria;?></span>
+            <input type="text" name="uname" placeholder="Felhasználónév" value="<?php echo $uname;?>"/>
+            <span class="FirstName-Error"><?php echo $fnameCriteria;?></span>
+            <input type="text" name="fname" placeholder="Keresztnév" value="<?php echo $fname;?>"/>
+            <span class="LastName-Error"><?php echo $lnameCriteria;?></span>
+            <input type="text" name="lname" placeholder="Vezetéknév" value="<?php echo $lname;?>"/>
+            <span class="Email-Error"><?php echo $emailCriteria;?></span>
+            <input type="text" name="email" placeholder="Email" value="<?php echo $email;?>"/>
+            <span class="Password-Error"><?php echo $passwordCriteria;?></span>
+            <input type="password" name="password" placeholder="Jelszó"/>
+            <span class="Password-Error"><?php echo $confirmPasswordCriteria;?></span>
+            <input type="password" name="confirmPassword" placeholder="Jelszó újra"/>
+            <span class=recaptcha-Error"><?php echo $recaptchaCriteria;?></span>
+            <div name="g-recaptcha-response" class="g-recaptcha" data-sitekey="6Ld1nA0aAAAAAA7F7eJOY7CMwg7aaQAfg3WZy6P0"></div>
+            <button>Regisztráció</button>
+            <p class="message">Már van fiókod? <a href="login.php">Lépj be!</a></p>
+            <!-- <p class="or-message"><b>OR</b></p> -->
+        </form>
+    </div>
+</div>
+<!--End Login Panel-->
+</body>
+</html>
