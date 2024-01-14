@@ -25,7 +25,72 @@ $Q_fetch_categories = "SELECT * FROM categories";
 
 <?php $page = 'products'?>
 
+<main class="1-main">
 
+    <section class="featured section" id="featured">
+
+        <?php
+        $result_cat = mysqli_query($conn, $Q_fetch_categories);
+
+        ?>
+        <div class="row category-title">
+            <div class="col">
+                <h2 class="category" id="small_title"></h2>
+                <h2 class="category-name " id="big_title"></h2>
+            </div>
+
+            <div class="dropdown col-auto">
+                <button class="dropbtn button" id="cat-but">Rendezés &nbsp<i class='bx bxs-down-arrow drop-arrow'></i></button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="sortby_products(1)">Ár alacsonytól magasig</a>
+                    <a href="#" onclick="sortby_products(2)">Ár magastól alacsonyig</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown col-auto">
+                <button class="dropbtn button" id="cat-but">Kategóriák &nbsp<i class='bx bxs-down-arrow drop-arrow'></i></button>
+                <div class="dropdown-content">
+                    <?php
+                    while($row_categories = mysqli_fetch_assoc($result_cat)){
+                        $categoryID = $row_categories['categoryID'];
+                        $p_cat_name = $row_categories['p_cat_name'];
+                        ?>
+                        <a href="#" onclick="display_products_by_cat_id(<?php echo $categoryID; ?>, '<?php echo $p_cat_name; ?>'); " ><?php echo $p_cat_name; ?></a>
+                        <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div id="result" class="featured__container bd-grid mt-4">
+        </div>
+
+    </section>
+
+    <section class="offer section">
+        <div class="offer__bg">
+            <div class="offer__data">
+                <h2 class="offer__title">Akció!</h2>
+                <p class="offer__description">Különleges ajánlat csak ebben a hónapban!</p>
+
+                <a href="#" class="button button__round">VÁSÁRLÁS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="new section" id="new">
+        <div class="row category-title">
+            <div class="col">
+                <h2 class="category" id="small_title2"></h2>
+                <h2 class="category-name " id="big_title2"></h2>
+            </div>
+        </div>
+
+        <div class="new__container bd-grid" id="result2">
+        </div>
+    </section>
 
     <script>
 
