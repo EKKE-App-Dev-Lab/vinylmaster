@@ -22,13 +22,6 @@ include "./AdditionalPHP/startSession.php";
 
 <?php include './Includes/PcNavBar.php';?>
 
-
-<div class="wave-image-group">
-    <div class="wave-image footer-wave">
-        <img src="Assets/images/1.index/NavBar_WaveGrey.png">
-    </div>
-</div>
-
 <div class="what-you-can-do">
     <div class="subtitle">
         <h2>Külünleges szolgáltatásunk</h2>
