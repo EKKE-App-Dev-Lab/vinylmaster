@@ -279,3 +279,73 @@ hr{
 /*---------------------------------------------------------------------------------------------*/
 /*START MEDIA QUERY FOR LOGIN.PHP, REGISTRATION.PHP, USERACCOUNT.PHP*/
 /*---------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px){
+
+    /*Start Bg Kép a login oldalhoz*/
+    .bg-image-container .bg-image{
+        background-image: url("./Assets/images/6.login/CakeAndCoffee.jpg");
+        filter: blur(8px);
+        padding-bottom: 63%;
+        -webkit-filter: blur(4px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /*End Bg Kép a login oldalhoz*/
+
+
+    /*Start Bg Kép a regisztrációs oldalhoz*/
+    .bg-image-container .bg-image-join{
+        background-image: url("./Assets/images/6.login/Eclair.jpg");
+        filter: blur(8px);
+        padding-bottom: 90%;
+        -webkit-filter: blur(4px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /*End Bg Kép a regisztrációs oldalhoz*/
+
+
+    /*Start Bg Kép a jelszó változtató oldalhoz*/
+    .bg-image-container .bg-image-forget{
+        background-image: url("./Assets/images/6.login/Dessert.jpg");
+        filter: blur(8px);
+        padding-bottom: 57%;
+        -webkit-filter: blur(4px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /*End Bg Kép a jelszó változtató oldalhoz*/
+    
+
+    /*Start Login Panel*/
+    .login-page {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 360px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+        z-index: 5;
+    }
+
+    .login-page .form .login{
+        margin-top: -31px;
+        margin-bottom: 26px;
+    }
+
+    .form {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
