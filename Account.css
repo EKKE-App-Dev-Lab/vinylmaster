@@ -153,3 +153,65 @@ hr{
     transition: all 0.3 ease;
     cursor: pointer;
 }
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.form .message a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.form .or-message{
+    font-size: 20px;
+}
+
+.social-login{
+    padding-top: 5px;
+}
+
+.social-login .login-text{
+    color:  #2196f3;
+    font-size: 20px;
+}
+
+.social-login i{
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.g-recaptcha{
+    height: 100px;
+}
+/*End Login & Regisztráció Panel*/
+
+
+/* Start Megköszönő oldal */
+.mail-sent-group{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mail-sent-container{
+    display:block;
+}
+
+.mail-sent-image-container{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+}
+
+.mail-sent-image{
+    background-image: url("./Assets/images/6.login/MailSent.png");
+    padding-bottom: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
