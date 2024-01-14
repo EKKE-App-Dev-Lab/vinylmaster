@@ -115,6 +115,9 @@ címre küldött hivatkozással.
 Termék kiválasztása:
 Sikeres bejelentkezést követően, a menüsorban a Termékek menüpontban tud a Vevő a termékek között böngészni,
 kategóriákat rendezni és sorbarendezni.
+Termékek Listázása: a termékek megjelenítés (borítókép, előadó, albumcím, vételár) a kapcsolódó információkkal
+Rendezési opciók: Ár szerint növekvő és csökkenő sorrend.
+Szűrési opciók: zenei kategória szerinti szűrési lehetőség
 Vevő esetén kosárba helyezés/eltávolítás/módosítás és megrendelés lehetőséggel.
 Eladó felhasználó esetén új termékek felvitelére, meglévők módosítására és törlésére is van lehetőség.
 
