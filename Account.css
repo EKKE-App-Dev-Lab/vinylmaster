@@ -29,3 +29,25 @@ hr{
     letter-spacing: 2.2pt;
 }
 
+.subtitle span{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2.2pt;
+}
+.user-logout{
+    padding-left: 20px;
+}
+
+.user-logout span{
+    color:white;
+}
+
+.user-logout i{
+    color:white;
+}
+
+.user-profile-container .input-error{
+    font-weight: bold;
+    color: red;
+}
