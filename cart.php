@@ -33,3 +33,32 @@ if(filter_input(INPUT_GET, 'action') == 'delete'){
 
 }
 ?>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VINYLMASTER | Részletek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== PHP KAPCSOLAT LÉTREHOZÁSA AZ ADATBÁZIOSSAL: VINYLMASTER ==========-->
+    <?php
+
+    include_once 'numOfItemsInCart.php';
+    ?>
+
+    <!--========== CSS FILES ==========-->
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <link rel="stylesheet" type="text/css" href="Sanjana.css">
+
+    <link href="jquery.nice-number.css" rel="stylesheet">
+    <!--========== JQUERY CDN ==========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="jquery.nice-number.js"> </script>
+    <script type="text/javascript">
+        $(function(){
+            $('input[type="number"]').niceNumber();
+        });
+    </script>
+</head>
+</html>
