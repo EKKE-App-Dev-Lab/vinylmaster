@@ -1,0 +1,122 @@
+hr{
+    color: lightgray;
+    opacity: .2;
+}
+
+/* Start User Profil */
+.col-md-15 {
+    width: 100%;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.adminPanelContainer{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.adminPanelSubtitle{
+    padding: 0 15px;
+    border-width: 2px;
+}
+
+.form-name-container h2{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+    padding: 0 0 2px;
+    font-size: 30px;
+    letter-spacing: 2.2pt;
+}
+
+.subtitle span{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2.2pt;
+}
+.user-logout{
+    padding-left: 20px;
+}
+
+.user-logout span{
+    color:white;
+}
+
+.user-logout i{
+    color:white;
+}
+
+.user-profile-container .input-error{
+    font-weight: bold;
+    color: red;
+}
+
+.user-profile-container .message{
+    font-weight: bold;
+    color: green;
+}
+
+.change-password-container{
+    padding-top: 1px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.change-password-container h3{
+    color: orangered;
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.danger-zone {
+    border: solid red;
+    border-style: groove;
+}
+
+.danger-zone .change-password-container h3{
+    color: red;
+}
+
+.danger-zone-inside {
+    padding: 15px;
+}
+/* End User Profil */
+
+
+/*Start Login & Regisztráció Panel*/
+.login-page {
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.login-header h3{
+    font-size: 30px;
+}
+
+.login-header p{
+    font-size: 20px;
+}
+
+.login-page .form .login{
+    margin-top: -31px;
+    margin-bottom: 26px;
+}
+
+.login-form span{
+    font-size: 20px;
+    color: red;
+}
+
+.form {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 25px;
+    text-align: center;
+}
