@@ -131,9 +131,9 @@ include "./AdditionalPHP/startSession.php";
             <div class="offer-bg">
                 <div class="offer-data">
                     <div class="subtitle">
-                        <h2>Ajánlatunk</h2>
+                        <h2>AJÁNLATUNK</h2>
                     </div>
-                        <p class="offer-data">Rendelj Most és Ébreszd Fel Saját Hangodat! Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a <a href="mailto:vinylmasters@gmail.com?subject=Saját Bakelit Rendelés">vinylmasters@gmail.com</a>címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
+                        <p class="offer-data">Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a <a href="mailto:vinylmasters@gmail.com?subject=Saját Bakelit Rendelés">vinylmasters@gmail.com</a>címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
                     </div>
                 </div>
             </div>
