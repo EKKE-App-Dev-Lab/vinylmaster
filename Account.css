@@ -1,0 +1,31 @@
+hr{
+    color: lightgray;
+    opacity: .2;
+}
+
+/* Start User Profil */
+.col-md-15 {
+    width: 100%;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.adminPanelContainer{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.adminPanelSubtitle{
+    padding: 0 15px;
+    border-width: 2px;
+}
+
+.form-name-container h2{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+    padding: 0 0 2px;
+    font-size: 30px;
+    letter-spacing: 2.2pt;
+}
+
