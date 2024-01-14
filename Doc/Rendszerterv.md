@@ -45,13 +45,15 @@ A ’Belépés’ ikonra kattinta megjelenik ’Felhasználó név’ és ’Jel
 belépésre. Sikertelen belépésről figyelmeztető üzenetben tájékoztatja a felhasználót a weboldal. Ha a belépés sikeres a
 felhasználó megkapja a belépett felhasználó jogait.
 
-#### Üzleti folyamatok regisztrálatlan felhasználók számára:
+### Üzleti folyamatok regisztrálatlan felhasználók számára:
 
-- Keresés az eladó termékek között:
-  [//]: <> (TODO keresési folyamat kifejtése)
+##### Keresés az eladó termékek között:
 
-- Regisztráció a rendszerben:
-  A még nem regisztrált vásárló regisztrál az oldalon. A regisztráció során az alábbi adatok megadása szükséges:
+  [//]: # (TODO keresési folyamat kifejtése)
+
+#### Regisztráció a rendszerben:
+
+A még nem regisztrált vásárlók számára a következő adatok megadása szükséges a regisztráció során:
 
 | Megnevezés     |
 |----------------|
@@ -62,7 +64,8 @@ felhasználó megkapja a belépett felhasználó jogait.
 | Jelszó         |
 | Jelszó újra    |
 
-A felhasználó regisztrációját a rendszer akkor tekinti érvényesnek, amikor a felhasználó az e-mailben megadott címen
+Miután a felhasználó megfelelően kitöltötte az adatokat és a rendszer sikeresen validálta azokat, értesítést kap a fiók
+megerősítési kötelezettségéről. A regisztráció érvényessé válik, amikor a felhasználó az e-mailben megadott címen
 megerősíti azt. Ezt követően a felhasználót hivatalosan regisztráltnak tekintjük.
 
 A felhasználó valamennyi személyes adata biztonságban van, mivel azok jelszóval védett adatbázisban tárolódnak. A
@@ -84,15 +87,26 @@ ideiglenes jelszó kerül kiküldésre a felhasználó által regisztrált email
 történik a bejelentkezés, majd lehetőség adódik a jelszó azonnali cseréjére a felhasználó által választott,
 biztonságosabb jelszóra.
 
+#### Regisztrált felhasználói fiók adatainak módosítása:
 
+[//]: # (TODO)
 
+#### Regisztrált felhasználói fiók törlése:
+
+[//]: # (TODO)
+
+#### Vásárlás
+
+[//]: # (TODO)
+
+### Üzleti folyamatok admin (super user) felhasználók számára
+
+[//]: # (TODO)
 
 ### 3.3. Üzleti entitások
 
 - hanghordozó (bakelit lemez)
-
-
-
+- megrendelés
 
 ## 4. Követelmények
 
