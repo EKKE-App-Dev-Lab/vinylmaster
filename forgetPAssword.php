@@ -19,6 +19,21 @@
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $emailCriteria = "Email formátum nem megfelelő";
             }
+            else {
+                $captcha = $_POST["g-recaptcha-response"];
+                $secretkey = "6LdT9A0aAAAAAPb_m1z6qx8ryZzlAhr8xRTk-uP3";
+                $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.urldecode($secretkey).'&response='.urldecode($captcha).'';
+                $response = file_get_contents($url);
+                $responseKey = json_decode($response, TRUE);
+                
+                if($responseKey['success'])
+                {
+
+                } else {
+                    $errCriteria = "Kérlek hitelesítsd a reCAPTCHA-t!";
+                }
+                
+            }
         }
     } 
       
