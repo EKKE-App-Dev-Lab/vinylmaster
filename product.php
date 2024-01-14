@@ -47,7 +47,45 @@ else{
 ?>
 
 
+<div class="container mx-auto mt-0 pt-0 ">
+    <div class="row continue-shop-div text-center">
+        <a href="products.php" class="button continue" id="cat-but" >Folytatás</a>
+    </div>
+    <div class="row">
+        <div class="col-md mt-4 mx-auto ">
+            <img src="<?php echo $p_img;?>" class="product-image" />
+        </div>
+        <div class="col mt-4">
+            <h1><?php echo $p_name;?></h1>
+            <h2>HUF <?php echo $p_price;?></h2>
+            <!-- INPUT MENNYISÉG -->
+            <form id="form-pd" method="POST" action="product.php?action=add&product_id=<?php echo $product_id; ?>">
+                <div class="box my-4">
+                    <label class="subtitle" style="margin-left: 2.7rem;
+                                margin-bottom: .8rem; font-weight: 700; color: grey; ">Mennyiség</label><br>
+                    <input type="number" value="1" min="1" max="100" name= "input_quantity" id= "input_quantity" class="input-quantity mx-2 p-3 px-4">
+                    <input type="hidden" name="name" value="<?php echo $p_name;?>" />
+                    <input type="hidden" class="show_id" name="productID_id" value="<?php echo $product_id;?>" />
+                    <input type="hidden" name="price" value="<?php echo $p_price;?>" /> <br>
+                    <input type="submit" name="add-to-cart" id="add-to-cart-btn" value="Kosárba" class="btn btn-primary btn-lg my-4 button" />
 
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product-description my-3">
+            <div class="description">
+                <h2>leírás</h2>
+            </div>
+            <div class="para_details py-2 px-4 my-3 ">
+                <p>
+                    <?php echo $p_desc;?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
