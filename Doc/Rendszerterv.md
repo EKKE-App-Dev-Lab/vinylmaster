@@ -4,11 +4,11 @@
 
 Egy olyan weboldal létrehozása, ahol az eladó bemutatkozhat, illetve az eladó bakelit lemezeit átlátható, letisztult formában értékesítheti a vevők számára, valamint lemezkészítési lehetőséget is felkínálhat.
 
-Az oldal használatához egy regisztrált és e-mail címmel megerősített felhasználói fiók szükséges. Az űrlapon megadott adatokkal tud a felhasználó később bejelentkezni, hogy vásárlást tudjon indítani, valamint elfelejtett jelszó esetén jelszót helyreállítani. A regisztrációnál számítógépes robot szűrés is történik reCapcha megerősítéssel.
+Az oldalon történő vásárláshoz egy regisztrált és e-mail címmel megerősített felhasználói fiók szükséges. Az űrlapon megadott adatokkal tud a felhasználó később bejelentkezni, hogy vásárlást tudjon indítani, valamint elfelejtett jelszó esetén jelszót helyreállítani. A regisztrációnál számítógépes robot szűrés is történik reCapcha megerősítéssel.
 
-Kétféle felhasználói fiók van: 
+Kétféle felhasználónk van: 
 - a megrendelőnk mint super user hozzáfér mindenhez, az adatbázishoz is és 
-- a vevői fiók akik megrendelést is tudnak leadni
+- a vásárlók akik rendelkeznek érvényes regisztrációval és megrendelést is tudnak leadni
 
 A sima látogatók csak böngészni tudnak az oldalon vagy kapcsolatba lépni az eladóval, de megrendelést nem tudnak leadni.
 
@@ -28,37 +28,63 @@ A kódon végzett változtatásokat és az esetleges párhuzamosan végzett mód
 
 ### 3.1 Üzleti szereplők
 
-A weboldalt regisztrálás nélkül is lehet használni. Ekkor a látogató csak a kezdőlapot és egyéb statikus tartalmakat
-tartalamzó lapokat tud elérni. Dinamikus weboldalak közül csak a keresés funkciót tudja használni.
-Regisztrált üzleti szereplők a vásárlók.
+A rendszert regisztrációval nem rendelkező felhasználók (látogatók) is eredményesen használhatják; számos statikus
+tartalom elérhető számukra, amelyek révén információkat szerezhetnek az eladókról, általuk kínált szolgáltatásokról és
+termékekről. Emellett kapcsolatfelvételi lehetőség is adódik számukra.
+
+A regisztrált felhasználók, akiket vásárlóknak tekintünk, képesek online kiválasztani és megvásárolni a kívánt terméket.
+Ezt követően lehetőségük van a kifizetésre, valamint a kiszállítás a megadott címre történik.
+
+Az adminisztrátor vagy a super-user jogosultságokkal rendelkező felhasználó figyelemmel követheti a megrendeléseket,
+frissítheti az online árukészletét, és naprakész információkat oszthat meg a szolgáltatásával kapcsolatban.
 
 ### 3.2 Üzleti folyamatok
 
 Bejelentkezés minden felhasználó számára elérhető a megfelelő menüpont alatt:\
 A ’Belépés’ ikonra kattinta megjelenik ’Felhasználó név’ és ’Jelszó’ beviteli űrlap. Ezek megadása után van lehetőség a
 belépésre. Sikertelen belépésről figyelmeztető üzenetben tájékoztatja a felhasználót a weboldal. Ha a belépés sikeres a
-felhasználó megkapja a belépett felhasználó jogait. 
+felhasználó megkapja a belépett felhasználó jogait.
 
-#### Üzleti folyamatok regisztrálatlan felhasználó számára:
+#### Üzleti folyamatok regisztrálatlan felhasználók számára:
+
+- Keresés az eladó termékek között:
+  [//]: <> (TODO keresési folyamat kifejtése)
 
 - Regisztráció a rendszerben:
   A még nem regisztrált vásárló regisztrál az oldalon. A regisztráció során az alábbi adatok megadása szükséges:
 
-| Megnevezés         |
-|--------------------|
-| Felhasználónév     |
-| Keresztnév         |
-| Vezetéknév         |
-| Email              |
-| Jelszó             |
-| Jelszó újra        |
+| Megnevezés     |
+|----------------|
+| Felhasználónév |
+| Keresztnév     |
+| Vezetéknév     |
+| Email          |
+| Jelszó         |
+| Jelszó újra    |
 
-Amennyiben megerősíti a felhasználó a regisztrációját az emailben kiküldött címen, regisztráltnak tekinthetjük a felhasználót.
+A felhasználó regisztrációját a rendszer akkor tekinti érvényesnek, amikor a felhasználó az e-mailben megadott címen
+megerősíti azt. Ezt követően a felhasználót hivatalosan regisztráltnak tekintjük.
 
-A felhasználó jelszava adatvédelmi okokból hash algoritmus segítségével kerül tárolásra.
+A felhasználó valamennyi személyes adata biztonságban van, mivel azok jelszóval védett adatbázisban tárolódnak. A
+felhasználó jelszava további adatvédelmi intézkedéseket tartalmaz, ugyanis hash algoritmus segítségével kerül tárolásra,
+ezzel maximalizálva a biztonságot. Ezen eljárások együttesen hozzájárulnak ahhoz, hogy a felhasználók személyes
+információi védettek és biztonságban maradjanak a rendszerben.
 
-- Regisztrált felhasználó bejelentkezése:
-A regisztrált felhasználónak lehetősége van bejelentkezni a rendszerbe a megfelelő adatok megadása után. Szükséges adatok: felhasználónév és jelszó.
+### Üzleti folyamatok regisztrált felhasználók számára
+
+#### Bejelentkezés:
+
+Regisztrált felhasználóinknak lehetőségük van bejelentkezni a rendszerbe, megadva az azonosítójukat (felhasználónév) és
+jelszavukat.
+
+#### Jelszó helyreállítása:
+
+Ha a regisztrált felhasználó elfelejtette jelszavát, lehetősége van a jelszó helyreállítására. Ebben az esetben egy új,
+ideiglenes jelszó kerül kiküldésre a felhasználó által regisztrált email címre. Az ideiglenes jelszó segítségével
+történik a bejelentkezés, majd lehetőség adódik a jelszó azonnali cseréjére a felhasználó által választott,
+biztonságosabb jelszóra.
+
+
 
 
 ### 3.3. Üzleti entitások
@@ -172,6 +198,18 @@ Az alábbi ábra mutatja az adatbázis felépítését:
 
 ## 12. Telepítési terv
 
+Helyi gépre való telepítés esetén a következőkre lesz szükség:
+- Egy webszerver környezetre, ami tudja az Apache/PHP/MySQL hármast.
+- Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel ellátott eszköz).
+- Egy modern böngésző.
 
+Webtárhelyre való telepítés esetén a következőkre lesz szükség:
+- Egy a Apache/PHP/MySQL hármast támogató tárhely.
+- Egy program, amivel FTP kapcsolaton keresztül feltölthetők a webalkalmazás fájljai.
+- Egy modern böngésző.
 
 ## 13. Karbantartási terv
+
+A platform nem igényel jelentős karbantartást. Főként az adatok és az adatbázis szerver felügyeletével kapcsolatos teendők kapcsolódhatnak a karbantartáshoz. 
+Bejövő adatbázis kéréseket monitorozni kell és esetenként optimalizálni, amennyiben nagy a terheltség.
+Funkcionalitás bővítése esetén merülhetnek fel problémák, ezen problémák elkerülésének érdekében bővítés esetén precízen kell megtervezni az új verziókat.

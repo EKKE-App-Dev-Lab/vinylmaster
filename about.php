@@ -77,7 +77,7 @@
             </div>
         </div>
         <!--End Mester Info-->
-        
+
 
         <!--Start Kitüntetések-->
         <div class="award-section">
@@ -135,6 +135,82 @@
         </div>
         <!--End Kitüntetések-->
 
+        <!--Start Csapatinfó-->
+        <div class="team-section">
+            <div class="team-title">
+                <span>Aranykezű Mestereink</span>
+            </div>
+
+            <div class="subtitle">
+                <h2>CSAPATUNK</h2>
+            </div>
+
+            
+            <div class="all-helper-info">
+                <div class="helper-individual">
+                    <div class="helper-group helper1">
+                        <div class="helper-pic-group">
+                            <div class="helper-pic"></div>
+                        </div>
+
+                        <div class = "helper-more-about">
+                            <p class="name"><b>LAKATOS ALAJOS</b></p>
+                            <p class="hierarchy">TÁRSALAPÍTÓ</p>
+                            <p class="description">A Rolling Stones albumai mindig ámulatba ejtenek...</p>
+                        </div>
+        
+                        <div class="helper-social-media">
+                            <div class="social-media">
+                                <span class="facebook">
+                                    <a href=#><i class="fab fa-facebook-square"></i></a>
+                                </span>
+                                <span class="twitter">
+                                    <a href=#><i class="fab fa-twitter-square"></i></a>
+                                </span>
+                                <span class="instagram">
+                                    <a href=#><i class="fab fa-instagram-square"></i></a>
+                                </span>
+                                <span class="pinterest">
+                                    <a href=#><i class="fab fa-pinterest-square"></i></a>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="helper-individual">
+                    <div class="helper-group helper2">
+                        <div class="helper-pic-group">
+                            <div class="helper-pic"></div>
+                        </div>
+
+                        <div class = "helper-more-about">
+                            <p class="name"><b>BANÁNOS ÁGNES</b></p>
+                            <p class="hierarchy">ÍRÓ ÉS ARCHIVÁLÓ</p>
+                            <p class="description">Amikor megszólal Elvis Presley a lemezen, megszűnika világ.</p>
+                        </div>
+        
+                        <div class="helper-social-media">
+                            <div class="social-media">
+                                <span class="facebook">
+                                    <a href=#><i class="fab fa-facebook-square"></i></a>
+                                </span>
+                                <span class="twitter">
+                                    <a href=#><i class="fab fa-twitter-square"></i></a>
+                                </span>
+                                <span class="instagram">
+                                    <a href=#><i class="fab fa-instagram-square"></i></a>
+                                </span>
+                                <span class="pinterest">
+                                    <a href=#><i class="fab fa-pinterest-square"></i></a>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Csapatinfó-->
 
 
         <!-- Start Google Map-->
