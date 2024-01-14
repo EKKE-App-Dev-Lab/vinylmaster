@@ -43,28 +43,48 @@ frissítheti az online árukészletét, és naprakész információkat oszthat m
 Bejelentkezés minden felhasználó számára elérhető a megfelelő menüpont alatt:\
 A ’Belépés’ ikonra kattinta megjelenik ’Felhasználó név’ és ’Jelszó’ beviteli űrlap. Ezek megadása után van lehetőség a
 belépésre. Sikertelen belépésről figyelmeztető üzenetben tájékoztatja a felhasználót a weboldal. Ha a belépés sikeres a
-felhasználó megkapja a belépett felhasználó jogait. 
+felhasználó megkapja a belépett felhasználó jogait.
 
-#### Üzleti folyamatok regisztrálatlan felhasználó számára:
+#### Üzleti folyamatok regisztrálatlan felhasználók számára:
+
+- Keresés az eladó termékek között:
+  [//]: <> (TODO keresési folyamat kifejtése)
 
 - Regisztráció a rendszerben:
   A még nem regisztrált vásárló regisztrál az oldalon. A regisztráció során az alábbi adatok megadása szükséges:
 
-| Megnevezés         |
-|--------------------|
-| Felhasználónév     |
-| Keresztnév         |
-| Vezetéknév         |
-| Email              |
-| Jelszó             |
-| Jelszó újra        |
+| Megnevezés     |
+|----------------|
+| Felhasználónév |
+| Keresztnév     |
+| Vezetéknév     |
+| Email          |
+| Jelszó         |
+| Jelszó újra    |
 
-Amennyiben megerősíti a felhasználó a regisztrációját az emailben kiküldött címen, regisztráltnak tekinthetjük a felhasználót.
+A felhasználó regisztrációját a rendszer akkor tekinti érvényesnek, amikor a felhasználó az e-mailben megadott címen
+megerősíti azt. Ezt követően a felhasználót hivatalosan regisztráltnak tekintjük.
 
-A felhasználó jelszava adatvédelmi okokból hash algoritmus segítségével kerül tárolásra.
+A felhasználó valamennyi személyes adata biztonságban van, mivel azok jelszóval védett adatbázisban tárolódnak. A
+felhasználó jelszava további adatvédelmi intézkedéseket tartalmaz, ugyanis hash algoritmus segítségével kerül tárolásra,
+ezzel maximalizálva a biztonságot. Ezen eljárások együttesen hozzájárulnak ahhoz, hogy a felhasználók személyes
+információi védettek és biztonságban maradjanak a rendszerben.
 
-- Regisztrált felhasználó bejelentkezése:
-A regisztrált felhasználónak lehetősége van bejelentkezni a rendszerbe a megfelelő adatok megadása után. Szükséges adatok: felhasználónév és jelszó.
+### Üzleti folyamatok regisztrált felhasználók számára
+
+#### Bejelentkezés:
+
+Regisztrált felhasználóinknak lehetőségük van bejelentkezni a rendszerbe, megadva az azonosítójukat (felhasználónév) és
+jelszavukat.
+
+#### Jelszó helyreállítása:
+
+Ha a regisztrált felhasználó elfelejtette jelszavát, lehetősége van a jelszó helyreállítására. Ebben az esetben egy új,
+ideiglenes jelszó kerül kiküldésre a felhasználó által regisztrált email címre. Az ideiglenes jelszó segítségével
+történik a bejelentkezés, majd lehetőség adódik a jelszó azonnali cseréjére a felhasználó által választott,
+biztonságosabb jelszóra.
+
+
 
 
 ### 3.3. Üzleti entitások
