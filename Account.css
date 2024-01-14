@@ -284,7 +284,7 @@ hr{
 
     /*Start Bg Kép a login oldalhoz*/
     .bg-image-container .bg-image{
-        background-image: url("./Assets/images/6.login/CakeAndCoffee.jpg");
+        background-image: url("./Assets/images/6.login/bg1.jpg");
         filter: blur(8px);
         padding-bottom: 63%;
         -webkit-filter: blur(4px);
@@ -297,7 +297,7 @@ hr{
 
     /*Start Bg Kép a regisztrációs oldalhoz*/
     .bg-image-container .bg-image-join{
-        background-image: url("./Assets/images/6.login/Eclair.jpg");
+        background-image: url("./Assets/images/6.login/bg2.jpg");
         filter: blur(8px);
         padding-bottom: 90%;
         -webkit-filter: blur(4px);
@@ -310,7 +310,7 @@ hr{
 
     /*Start Bg Kép a jelszó változtató oldalhoz*/
     .bg-image-container .bg-image-forget{
-        background-image: url("./Assets/images/6.login/Dessert.jpg");
+        background-image: url("./Assets/images/6.login/bg3.jpg");
         filter: blur(8px);
         padding-bottom: 57%;
         -webkit-filter: blur(4px);
