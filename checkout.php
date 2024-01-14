@@ -209,7 +209,50 @@ function test_input($data)
                 </ul>
 
             </div>
-        </div>
+            <!-- SZÁMLÁZÁSI CÍM  -->
+            <div class="col-md-7 col-lg-8">
+
+                <h4 class="mb-3 border-bottom-pink">Számlázási cím</h4>
+
+
+                <form action=
+                      "
+            <?php
+                      if ($validated) {
+                          echo 'ThankYouCheckout.php';
+                          $validated = false;
+                      } else {
+                          echo htmlspecialchars($_SERVER["PHP_SELF"]);
+                      }
+
+                      ?>"
+                      class="needs-validation" method="POST">
+                    <div class="row g-3">
+
+
+                        <!--  KERESZTNÉV MEGADÁSA  -->
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Keresztnév</label>
+                            <input type="text" class="form-control" name="fname" id="firstName" placeholder=""
+                                   value="<?php echo $fname; ?>" required>
+                            <div class="invalid-feedback">
+                                Érvényes keresztnév szükséges.
+                            </div>
+                            <span class="error"><?php echo $fnameErr; ?></span>
+                        </div>
+
+
+                        <!-- VEZETÉKNÉV MEGADÁSA -->
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Vezetéknév</label>
+                            <input type="text" class="form-control" name="lname" id="lastName" placeholder=""
+                                   value="<?php echo $lname; ?>" required>
+                            <div class="invalid-feedback">
+                                Érvényes vezetéknév szükséges.
+                            </div>
+                            <span class="error"><?php echo $lnameErr; ?></span>
+                        </div>
+                    </div>
     </main>
 </div>
 
