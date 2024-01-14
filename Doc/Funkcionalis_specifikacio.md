@@ -36,15 +36,14 @@ Egyszerű vásárlási folyamat.
 
 Fenntartási költség minimalizálás.
 
-
 ## Követelménylista
 
 Felhasználói szintek:
+
 - látogatóként a terméklista nem elérhető
 - regisztrált felhasználók láthatják a terméklistát és az árakat is, valamint vásárolhatnak
 - eladóként elérhető a termék adminisztrációs felület is
 - eladó tudja a felhasználókat is adott esetben törölni
-
 
 ## Használati esetek
 
@@ -58,6 +57,7 @@ Látogató
 
 Tevékenységek:
 Eladó:
+
 - Jogosultsága alapbeállítás a rendszerben
 - Bejelentkezés eladóként, mindenhez hozzáfér
 - Felhasználókat tud törölni
@@ -66,6 +66,7 @@ Eladó:
 - Meglévő terméket tud a terméklistáról törölni
 
 Vevő:
+
 - Regisztráció
 - Bejelentkezés vevőként
 - Termékek megtekintése
@@ -82,19 +83,20 @@ Kezdőoldal látványos kép elemekkel, de alapvetően nem kattintható, csak eg
 
 Fejléc:
 Cég logo baloldalon a fejlécben, minden oldalon látható.
-Fejlécben a menüsor, benne Kezdőoldal/Termékek/Új termék hozzáadása/Készítsd el a saját bakelited/Rólunk/Kapcsolatfelvétel. Új termék hozzáadása csak az Eladó felhasználónál látszik.
+Fejlécben a menüsor, benne Kezdőoldal/Termékek/Új termék hozzáadása/Készítsd el a saját
+bakelited/Rólunk/Kapcsolatfelvétel. Új termék hozzáadása csak az Eladó felhasználónál látszik.
 Fejléc jobb oldalon kattintható Kosár és Felhasználó ikonok.
-Bejelentkezés után válik elérhetővé a terméklista és Vevő felhasználók részére a vásárlási lehetőség, addig „A termékek megtekintéséhez regisztráció és bejelentkezés szükséges” tájékoztató látható.
+Bejelentkezés után válik elérhetővé a terméklista és Vevő felhasználók részére a vásárlási lehetőség, addig „A termékek
+megtekintéséhez regisztráció és bejelentkezés szükséges” tájékoztató látható.
 A menüsorban bejelentkezés ikonnal lehet a felhasználóknak bejelentkezni.
 A kosár ikonra kattintva érhető el a vevők által már kosárba helyezett termékek
 A vásárlási folyamat illusztrált bemutatása.
 Néhány ízelítő lemez a kínálatból, Youtube vagy Spotify linkkel a belehallgatáshoz.
 A lábjegyzetben a szokásos hivatkozások (Adatkezelési szabályzat, Felhasználói feltételek, Támogatás stb.)
 
-
 ## Forgatókönyvek
 
-Regisztráció: 
+Regisztráció:
 Az oldal betöltése után a kezdőképernyőn a Felhasználó ikonra kattintva hagyományos bejelentkezési
 képernyő jelenik meg, ami felhasználói nevet és jelszót kér, valamint ha még valaki nem felhasználó, akkor ennek
 segítségével tud vevőként regisztrálni. Amennyiben új felhasználóként regisztrál, akkor egy új nyomtatványon meg kell
@@ -102,7 +104,7 @@ adnia a Felhasználói nevét, Vezetéknevét, Keresztnevét, e-mail címét, je
 reCAPTCHA-t az automatizált visszaélések miatt.
 Az e-mail címre kiküldésre kerül egy valós e-mail címet megerősítő kérés, utána válik aktívvá a felhasználó.
 
-Bejelentkezés: 
+Bejelentkezés:
 Az oldal elindítás után, a navigációs sávon a Bejelentkezés gomb segítségével tudunk belépni a fiókunkba,
 amennyiben már előtte regisztráltunk egyet.
 A gomb lenyomása után megadhatjuk a bejelentkezéshez szükséges adataink (Felhasználónév, Jelszó), és amennyiben helyes
@@ -126,3 +128,25 @@ kapcsolatfelvételi űrlap.
 
 Kapcsolat menüpont
 Elérhetőség Google maps linkkel és kapcsolatfelvételi űrlap
+
+## Adatbázis felépítés
+
+A Vinylmaster webshop által hazsnált MySQL adatbázis, a vinylmasterdb, egy olyan adatbázis-rendszer, amelyet úgy
+terveztünk, hogy kezelje az online hanglemezbolt adatait. A struktúra több táblát tartalmaz, mint például products, 
+categories, product_category, types, product_type, user, cart, cartitem, userorder, orderitem, és transaction.
+
+Ebben a rendszerben a products tábla tárolja az eladásra kínált hanglemezek adatait, beleértve az előadó nevét, az album
+címét, leírását, állapotát, kategóriáját, árát, és a borító képét. A categories és types táblák különböző kategóriákat
+és típusokat definiálnak, amelyeket aztán a product_category és product_type táblákon keresztül kapcsolnak össze a
+termékekkel.
+
+A user tábla a felhasználók adatait tárolja, beleértve a felhasználónevet, jelszót, nevet, e-mail címet, címet,
+telefonszámot, és további információkat. A vásárlási folyamatot a cart, cartitem, userorder, orderitem, és transaction
+táblák kezelik, amelyek a kosárba helyezett termékeket, a megrendeléseket és a tranzakciókat követik nyomon.
+
+Az alábbi ábra mutatja az adatbázis felépítését:
+
+![img.png](adatbazis.png)
+
+
+
