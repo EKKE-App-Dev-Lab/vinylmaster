@@ -432,3 +432,34 @@ hr{
         transform-origin:0 0;
         -webkit-transform-origin:0 0;
     }
+
+    .reg-page{
+        padding-top: 30px;
+        margin-top:30px;
+    }
+    /*End Login Panel*/
+
+
+    /* Start User Profil Felírat*/
+    .user-profile-container .input-error{
+        font-weight: bold;
+        color: #2196f3;
+    }
+
+    .user-profile-container .message{
+        font-weight: bold;
+        color: green;
+    }
+
+    .subtitle{
+        display: inline;
+        margin: auto;
+        margin-left: 280px;
+    }
+    
+    .admin-subtitle{
+        display: inline;
+        margin: auto;
+        margin-left: 380px;
+    }
+
