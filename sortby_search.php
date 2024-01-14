@@ -4,8 +4,8 @@ include "./AdditionalPHP/startSession.php";
 include_once 'connection.php';
 include_once 'numOfItemsInCart.php';
 
-$Q_sortby_price_asc = "SELECT * FROM products ORDER BY p_price ASC; ";
-$Q_sortby_price_desc = "SELECT * FROM products ORDER BY p_price DESC; ";
+$Q_sortby_price_asc = "SELECT * FROM products ORDER BY ar ASC; ";
+$Q_sortby_price_desc = "SELECT * FROM products ORDER BY ar DESC; ";
 
 if($_REQUEST['sortby']==1){
     $result_sortby =mysqli_query($conn, $Q_sortby_price_asc);
