@@ -70,6 +70,10 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
 <!--========== PHP QUERIK ==========-->
 <?php
 
+$Q_fetch_featured = "SELECT * FROM products INNER JOIN product_type ON products.productID = product_type.productID WHERE product_type.typeID = 2"; //selects featured products
+$Q_fetch_new = "SELECT * FROM products INNER JOIN product_type ON products.productID = product_type.productID WHERE product_type.typeID = 1"; //selects new products
+$Q_fetch_product_details = "SELECT * FROM products INNER JOIN product_type ON products.productID = product_type.productID WHERE product_type.typeID = 2"; //selects product with id =1
+$Q_fetch__all_products = "SELECT * FROM products";
 
 ?>
 
@@ -136,7 +140,7 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
                 <!-- termék image -->
                 <?php
 
-                $result_product = mysqli_query($conn, );
+                $result_product = mysqli_query($conn, $Q_fetch__all_products);
                 $check = mysqli_num_rows($result_product);
 
                 if ($check > 0) { //ellenőrzi, hogy a $result üres-e az adatbázisban
