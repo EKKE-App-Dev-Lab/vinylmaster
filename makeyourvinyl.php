@@ -50,10 +50,10 @@ include "./AdditionalPHP/startSession.php";
     <div class="marketing-container">
         <div class="header">
             <h1>Ébreszd Fel Saját Hangodat - Egyedi Bakelit Lemezekkel!</h1>
-            <p>Az [Webshop Neve] bemutatja: Saját Bakelit Lemez Készítés - Ahol a Zene Összetalálkozik az Örökséggel!</p>
+            <p>A VINYLMASTER bemutatja: Saját Bakelit Lemez Készítés - Ahol a Zene Összetalálkozik az Örökséggel!</p>
         </div>
         <div class="main-content">
-            <p>Álmodtál már arról, hogy a kedvenc zenéidet, egyedi hangfelvételeidet, vagy akár saját szerzeményeidet bakelit lemezen hallgasd? Mi, az [Webshop Neve]-nál, mostantól megvalósítjuk ezt az álmodat!</p>
+            <p>Álmodtál már arról, hogy a kedvenc zenéidet, egyedi hangfelvételeidet, vagy akár saját szerzeményeidet bakelit lemezen hallgasd? Mi, a VINYLMASTER-nél, mostantól megvalósítjuk ezt az álmodat!</p>
         </div>
         <div class="features">
             <h2>Egyedi Gyártás, Személyre Szabott Élmény</h2>
@@ -68,7 +68,7 @@ include "./AdditionalPHP/startSession.php";
             <p>Adj hozzá egy személyes érintést a bakelit lemezedhez egyedi borítótervezéssel. Művészeink segítenek abban, hogy a borító tökéletesen tükrözze a lemez tartalmát.</p>
         </div>
         <div class="contact-info">
-            <p>Rendelj Most és Ébreszd Fel Saját Hangodat! Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a [Kapcsolatfelvételi Link/Email] címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
+            <p>Rendelj Most és Ébreszd Fel Saját Hangodat! Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a vinylmaster@vinylmaster.hu címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
         </div>
     </div>
 
