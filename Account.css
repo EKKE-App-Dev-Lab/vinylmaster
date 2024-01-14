@@ -463,3 +463,37 @@ hr{
         margin-left: 380px;
     }
 
+    .adminPanelContainer{
+        padding: 0;
+        padding-bottom: 50px;
+        margin: 0px 380px;
+        
+    }
+    
+    .adminPanelSubtitle{
+        padding: 0 15px;
+        border-width: 2px;
+    }
+    
+    .form-name-container h2{
+        text-align: center;
+        color: orangered;
+        border-bottom: 3px solid orangered;
+        padding: 0 0 2px;
+        font-size: 40px;
+        letter-spacing: 2.2pt;
+    }
+
+    .admin-subtitle span{
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        letter-spacing: 2.2pt;
+    }
+
+    .subtitle span{
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        letter-spacing: 2.2pt;
+    }
