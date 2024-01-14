@@ -86,6 +86,148 @@
         </section>
         <!--Különleges ajánlat vége-->
 
+        <!--Start Rendelés lépései-->
+        <div class="how-to-order">
+            <div class="subtitle">
+                <h2 class="order-subtitle">MEGRENDELÉS MENETE</h2>
+            </div>
+            <div class="row" style="color: #1a73e8;">
+                <div class="column">
+                  <i class="fas fa-solid fa-record-vinyl"></i>
+                  <p><b>Válaszd ki a lemezt</b></p>
+                </div>
+                <div class="column">
+                  <i class="fas fa-cart-plus"></i>
+                  <p><b>Add hozzá a kosaradhoz</b></p>
+                </div>
+                <div class="column">
+                  <i class="fas fa-money-check-alt"></i>
+                  <p><b>Megrendelés és fizetés</b></p>
+                </div>
+                 <div class="column">
+                 <i class="fas fa-box-open"></i>
+                 <p><b>Rendelésfeldolgozás</b></p>
+                </div>
+                  <div class="column">
+                  <i class="fas fa-shipping-fast"></i>
+                  <p><b>Kiszállítás</b></p>
+                </div>
+            </div>
+         </div>
+        <!--End Rendelés lépései-->
+
+        <!--Start Wave Image Flip-->
+        <div class="wave-image-group">
+            <div class="wave-image-flip how-to-order-wave">
+                <img src="Assets/images/1.index/NavBar_WaveWhiteFlip.png">
+            </div>
+        </div>
+        <!--End Wave Image Flip-->
+        
+
+        <!-- Start Mesterünk-->
+        <div class="our-baker">
+
+            <div class="subtitle">
+                <h2>Csapatunk</h2>
+            </div>
+            
+            <div class="all-helper-info-index">
+                <div class="helper-individual-index">
+                    <div class="helper-group helper0">
+                        <div class="helper-pic-group">
+                            <div class="helper-pic"></div>
+                        </div>
+
+                        <div class = "helper-more-about">
+                            <p class="name"><b>KONNER SÁRA</b></p>
+                            <p class="hierarchy">CEO - VINYLMASTER</p>
+                            <p class="description">A formátum nem számít, mindegyik jó dili</p>
+                        </div>
+        
+                        <div class="helper-social-media">
+                            <div class="social-media">
+                                <span class="facebook">
+                                    <a href=#><i class="fab fa-facebook-square"></i></a>
+                                </span>
+                                <span class="twitter">
+                                    <a href=#><i class="fab fa-twitter-square"></i></a>
+                                </span>
+                                <span class="instagram">
+                                    <a href=#><i class="fab fa-instagram-square"></i></a>
+                                </span>
+                                <span class="pinterest">
+                                    <a href=#><i class="fab fa-pinterest-square"></i></a>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="helper-individual-index">
+                    <div class="helper-group helper1">
+                        <div class="helper-pic-group">
+                            <div class="helper-pic"></div>
+                        </div>
+
+                        <div class = "helper-more-about">
+                            <p class="name"><b>LAKATOS ALAJOS</b></p>
+                            <p class="hierarchy">TÁRSALAPÍTÓ</p>
+                            <p class="description">Zene nélkül mit érek én?</p>
+                        </div>
+        
+                        <div class="helper-social-media">
+                            <div class="social-media">
+                                <span class="facebook">
+                                    <a href=#><i class="fab fa-facebook-square"></i></a>
+                                </span>
+                                <span class="twitter">
+                                    <a href=#><i class="fab fa-twitter-square"></i></a>
+                                </span>
+                                <span class="instagram">
+                                    <a href=#><i class="fab fa-instagram-square"></i></a>
+                                </span>
+                                <span class="pinterest">
+                                    <a href=#><i class="fab fa-pinterest-square"></i></a>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="helper-individual-index">
+                    <div class="helper-group helper2">
+                        <div class="helper-pic-group">
+                            <div class="helper-pic"></div>
+                        </div>
+
+                        <div class = "helper-more-about">
+                            <p class="name"><b>BANÁNOS ÁGNES</b></p>
+                            <p class="hierarchy">ÍRÓ ÉS ARCHIVÁLÓ</p>
+                            <p class="description">Last Christmas I gave you MAHART...</p>
+                        </div>
+        
+                        <div class="helper-social-media">
+                            <div class="social-media">
+                                <span class="facebook">
+                                    <a href=#><i class="fab fa-facebook-square"></i></a>
+                                </span>
+                                <span class="twitter">
+                                    <a href=#><i class="fab fa-twitter-square"></i></a>
+                                </span>
+                                <span class="instagram">
+                                    <a href=#><i class="fab fa-instagram-square"></i></a>
+                                </span>
+                                <span class="pinterest">
+                                    <a href=#><i class="fab fa-pinterest-square"></i></a>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Mesterünk-->
 
         <!-- Start Google Map-->
             <?php include './Includes/GoogleMap.php';?>

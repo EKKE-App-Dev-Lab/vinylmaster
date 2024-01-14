@@ -382,6 +382,52 @@ html, body{
 }
 /* End Hírfolyam */
 
+.marketing-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header h1 {
+    color: #007BFF;
+    font-size: 24px;
+}
+
+.header p, .main-content p, .features h2, .features p, .call-to-action h2, .call-to-action p {
+    text-align: justify;
+}
+
+.features h2, .call-to-action h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+.call-to-action {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feature h2 {
+    color: #555;
+    margin-top: 15px;
+}
+
+.feature p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 
 /* Start Footer */
 .footer{
