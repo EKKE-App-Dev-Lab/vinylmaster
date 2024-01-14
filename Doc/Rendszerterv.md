@@ -47,6 +47,51 @@ Ikonok:
 - Kosár
 - Felhasználó
 
+### 5.1 Menühierarchiák
+A menürendszert egy, a weboldal fejléce alatt található vízszintes, lenyíló menüket is tartalmazó navigációs sávban építettük fel.
+
+A menünek kétféle megjelenése van a megtekintő eszköz felbontásának függvényében, de a két menürendszer csak kinézetben tér el egymástól.
+
+A rendszerbe való bejelentkezés előtt elérhető oldalak a menüből:
+- Kezdőlap
+- Termékek
+- Készíts saját bakelitet
+- Rólunk
+- Kapcsolatfelvétel
+- Bejelentkezés, csak ikonnal jelezve
+  
+A rendszerbe való bejelentkezés után elérhető oldalak a menüből:
+- Bevásárolókosár, csak ikonnal jelezve. Ezen látszik az is, hogy hány terméket tartalmaz a kosár
+
+Láblécben is találhatóak további menüpontok, amelyek minden eszközön elérhetőek, ezek a következőek:
+- Adatkezelési tájékoztató
+- Felhasználói feltételek
+
+
+### 5.2 Képernyőtervek
+
+A Vinylmaster webshop tervezési folyamata azzal kezdődött, hogy alaposan feltérképeztük a bakelit lemezek piacát, figyelembe véve az aktuális trendeket és a célcsoport igényeit. A kutatás eredményeként kialakítottuk a tervezés alapelveit, melyek közé tartozott a modern és fiatalos dizájn hangsúlyozása.
+
+A design fázisában elsődleges szempontként kezeltük az élénk és vonzó színpaletta használatát, amely tükrözi a Vinylmaster dinamizmusát és innovatív hozzáállását. Az olvasható betűtípusok és az áttekinthető elrendezés kialakítása mellett a könnyen kezelhető és átlátható felületre helyeztük a hangsúlyt, hogy a látogatók gyorsan és egyszerűen megtalálhassák a keresett termékeket.
+
+A funkcionalitás és esztétika szorosan összefonódott a tervezési folyamat minden szakaszában. A webshop felépítésénél odafigyeltünk arra, hogy az oldalak ne csak esztétikusak, hanem praktikusak is legyenek. Az egyszerű vásárlási folyamat és a logikus információelrendezés garantálják a zökkenőmentes felhasználói élményt.
+
+Így született meg a Vinylmaster webshop, amely nem csupán egy online felület, hanem inspiráló tér is. A forma és a funkcionalitás harmonikusan egyesül ebben a modern, fiatalos és könnyen kezelhető webshopban, létrehozva ezzel egy kivételes vásárlási élményt a látogatók számára.
+
+Főbb oldalak:
+
+index.php, amely minden felhasználó számára először jelenik meg.
+
+products.php, regisztrált és nem regisztrált felhasználók is ezen az oldalon böngészhetik a webshop kínálatát.
+
+belepve.html, amely az adminisztrátor könyvtáros bejelentkezése után jelenik meg. Ez a kezdőoldal Belépés menüpontján keresztül elérhető.
+
+Megjegyzések:
+
+Adminisztrátori jogosultsággal nem rendelkező könyvtáros menürendszere annyiban tér el a fentitől, hogy a Könyvtáros menüpont nem szerepel az oldalán, mint az a Menühierarchia fejezetben is ismertetésre került.
+
+Az Egyszerű keresés és az Részletes keresés oldalak elérhetők a kezdőlapról és belépést követően is, azonban a keresés eredménye oldalak a kezdőlapra visznek vissza, megváltozik a menürendszer, ez tekinthető a prototípus hiányosságának, azonban a keresési folyamatot így is demonstrálja a weboldal.
+
 
 ## 6. Fizikai környezet
 Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes operációs rendszer és az ehhez megfelelő hardverrel ellátott eszköz.
