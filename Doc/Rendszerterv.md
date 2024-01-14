@@ -26,6 +26,45 @@ A kódon végzett változtatásokat és az esetleges párhuzamosan végzett mód
 
 ## 3. Üzleti folyamatok modellje
 
+### 3.1 Üzleti szereplők
+
+A weboldalt regisztrálás nélkül is lehet használni. Ekkor a látogató csak a kezdőlapot és egyéb statikus tartalmakat
+tartalamzó lapokat tud elérni. Dinamikus weboldalak közül csak a keresés funkciót tudja használni.
+Regisztrált üzleti szereplők a vásárlók.
+
+### 3.2 Üzleti folyamatok
+
+Bejelentkezés minden felhasználó számára elérhető a megfelelő menüpont alatt:\
+A ’Belépés’ ikonra kattinta megjelenik ’Felhasználó név’ és ’Jelszó’ beviteli űrlap. Ezek megadása után van lehetőség a
+belépésre. Sikertelen belépésről figyelmeztető üzenetben tájékoztatja a felhasználót a weboldal. Ha a belépés sikeres a
+felhasználó megkapja a belépett felhasználó jogait. 
+
+#### Üzleti folyamatok regisztrálatlan felhasználó számára:
+
+- Regisztráció a rendszerben:
+  A még nem regisztrált vásárló regisztrál az oldalon. A regisztráció során az alábbi adatok megadása szükséges:
+
+| Megnevezés         |
+|--------------------|
+| Felhasználónév     |
+| Keresztnév         |
+| Vezetéknév         |
+| Email              |
+| Jelszó             |
+| Jelszó újra        |
+
+Amennyiben megerősíti a felhasználó a regisztrációját az emailben kiküldött címen, regisztráltnak tekinthetjük a felhasználót.
+
+A felhasználó jelszava adatvédelmi okokból hash algoritmus segítségével kerül tárolásra.
+
+- Regisztrált felhasználó bejelentkezése:
+A regisztrált felhasználónak lehetősége van bejelentkezni a rendszerbe a megfelelő adatok megadása után. Szükséges adatok: felhasználónév és jelszó.
+
+
+### 3.3. Üzleti entitások
+
+- hanghordozó (bakelit lemez)
+
 
 
 
@@ -35,19 +74,14 @@ Egy PHP-t futtatni képes webszerver MySQL adatbázissal, valamint e-mail küld�
 
 ## 5. Funkcionális terv
 
-Menü felépítés:
-Logo
-- Kezdőoldal
-- Termékek
-- Készíts saját bakelitet
-- Rólunk
-- Kapcsolatfelvétel
+### 5.1 Rendszerszereplők
 
-Ikonok:
-- Kosár
-- Felhasználó
+### 5.2 Rendszerhasználati esetek
 
-### 5.1 Menühierarchiák
+![login.png](usecases%2Flogin.png)
+
+### 5.3 Menühierarchiák
+
 A menürendszert egy, a weboldal fejléce alatt található vízszintes, lenyíló menüket is tartalmazó navigációs sávban építettük fel.
 
 A menünek kétféle megjelenése van a megtekintő eszköz felbontásának függvényében, de a két menürendszer csak kinézetben tér el egymástól.
@@ -68,7 +102,7 @@ Láblécben is találhatóak további menüpontok, amelyek minden eszközön el�
 - Felhasználói feltételek
 
 
-### 5.2 Képernyőtervek
+### 5.4 Képernyőtervek
 
 A Vinylmaster webshop tervezési folyamata azzal kezdődött, hogy alaposan feltérképeztük a bakelit lemezek piacát, figyelembe véve az aktuális trendeket és a célcsoport igényeit. A kutatás eredményeként kialakítottuk a tervezés alapelveit, melyek közé tartozott a modern és fiatalos dizájn hangsúlyozása.
 
