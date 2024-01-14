@@ -51,3 +51,37 @@ hr{
     font-weight: bold;
     color: red;
 }
+
+.user-profile-container .message{
+    font-weight: bold;
+    color: green;
+}
+
+.change-password-container{
+    padding-top: 1px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.change-password-container h3{
+    color: orangered;
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.danger-zone {
+    border: solid red;
+    border-style: groove;
+}
+
+.danger-zone .change-password-container h3{
+    color: red;
+}
+
+.danger-zone-inside {
+    padding: 15px;
+}
+/* End User Profil */
