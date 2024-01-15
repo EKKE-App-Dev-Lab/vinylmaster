@@ -12,7 +12,7 @@ $errCriteria = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ((empty($_POST['uname'])) || (empty($_POST['password']))){
-        $errCriteria = "Incorrect Username or Password!";
+        $errCriteria = "Helytelen jelszó vagy Email!";
     } else {
         $uname = test_input($_POST['uname']);
         $password = test_input($_POST['password']);
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     header('location: checkAccount.php');
                 } else {
-                    $errCriteria = "Incorrect Username or Password!";
+                    $errCriteria = "Helytelen kód vagy Email!";
                 }
             }
             else if(isset($_COOKIE['verifiedEmailCookie']))
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $to = $row['email'];
                         $subject = "Email Verification";
                         $message = "<a href='http://localhost/MyFiles/CakeShop/verifyEmail.php?vkey=$vkey'>Register Account</a>";
-                        $headers = "From: malako.cakeshop@gmail.com \r\n";
+                        $headers = "From: asd.asd@gmail.com \r\n";
                         $headers .= "MIME-Version: 1.0" . "\r\n";
                         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 

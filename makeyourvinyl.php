@@ -135,71 +135,27 @@ include "./AdditionalPHP/startSession.php";
                     </div>
                         <p class="offer-data">Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a <a href="mailto:vinylmasters@gmail.com?subject=Saját Bakelit Rendelés">vinylmasters@gmail.com</a>címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
                     </div>
+                    <br><br>
                 </div>
             </div>
         </section>
         <!--Különleges ajánlat vége-->
 
-<footer class="footer-group">
-
-    <div class="footer">
-
-        <div class="logo">
-            <span class="logo-name">VINYLMASTER</span>
+        <!--Start Wave Image-->
+        <div class="wave-image-group">
+            <div class="wave-image footer-wave">
+                <img src="Assets/images/1.index/NavBar_WaveGrey.png">
+            </div>
         </div>
+        <!--End Wave Image-->
 
-        <div class="social-media">
-                    <span class="facebook">
-                        <a href=#><i class="fab fa-facebook-square"></i></a>
-                    </span>
-            <span class="twitter">
-                        <a href=#><i class="fab fa-twitter-square"></i></a>
-                    </span>
-            <span class="instagram">
-                        <a href=#><i class="fab fa-instagram-square"></i></a>
-                    </span>
-            <span class="pinterest">
-                        <a href=#><i class="fab fa-pinterest-square"></i></a>
-                    </span>
-        </div>
+        <!--Start Footer-->
+        <?php include './Includes/Footer.php';?>
+        <!--End Footer-->
 
-        <hr size="2px" width="80%" color="white">
-        <hr size="2px" width="80%" color="white">
-
-        <div class="contact-links">
-            <span class="phone"><i class="fas fa-phone-square-alt"></i> +36 36 1234 XXXX</span>
-            <span class="address">Eger, Eszterházy tér 1, 3300 Magyarország</span>
-        </div>
-
-        <div class="legal-links">
-            <span class="privacy-policy"><b><a href=#>ADATKEZELÉSI TÁJÉKOZTATÓ</a></b></span>
-            <span class="term-of-use"><b><a href=#>FELHASZNÁLÓI FELTÉTELEK</a></b></span>
-        </div>
-
-        <div class="copyright">
-            <span class="copyright-text">&#169; 2024 Design by András & Erik & Levente & Tamás</span>
-        </div>
-
-    </div>
-
-</footer>
-
-
-<div class="bottom-nav-group">
-    <nav class="bottom-nav">
-        <a href="login.html" class="bottom-nav-link">
-            <i class="fas fa-user bottom-nav-icon" ></i>
-            <span class="bottom-nav-text">Fiók</span>
-        </a>
-        <a href="#" class="bottom-nav-link">
-            <i class="fas fa-search"></i>
-            <span class="bottom-nav-text">Keresés</span>
-        </a>
-        <a href="#" class="bottom-nav-link">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="bottom-nav-text">Kosaram</span>
-        </a>
-    </nav>
-</div>
+        
+        <!-- Start Mobil Alsó Nav -->
+        <?php include './Includes/MobileBottomNav.php';?>
+        <!-- End Mobil Alsó Nav -->
 </body>
 </html>

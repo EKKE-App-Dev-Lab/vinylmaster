@@ -27,13 +27,13 @@
         <hr size="2px" width="80%" color="white">
 
         <div class="contact-links">
-            <span class="phone"><i class="fas fa-phone-square-alt"></i> +36 36 1234 XXXX</span>
-            <span class="address">Eger, Eszterházy tér 1, 3300 Magyarország</span>
+            <span class="phone"><i class="fas fa-phone-square-alt"></i> +36 36 123 XXXX</span>
+            <span class="address">Eger, Leányka utca 4/A, 3300 Magyarország</span>
         </div>
 
         <div class="legal-links">
-            <span class="privacy-policy"><b><a href=#>ADATKEZELÉSI TÁJÉKOZTATÓ</a></b></span>
-            <span class="term-of-use"><b><a href=#>FELHASZNÁLÓI FELTÉTELEK</a></b></span>
+            <span class="privacy-policy"><b><a href="Assets/docs/PrivacyPolicy.pdf">ADATKEZELÉSI TÁJÉKOZTATÓ</a></b></span>
+            <span class="term-of-use"><b><a href="Assets/docs/ASZF.pdf">ÁLTALÁNOS SZERZŐDÉSI FELTÉTELEK</a></b></span>
         </div>
 
         <div class="copyright">

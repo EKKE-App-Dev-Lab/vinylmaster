@@ -290,9 +290,9 @@
         <!--End Footer-->
 
         
-        <!-- Start Alsó Nav -->
+        <!-- Start Mobil Alsó Nav -->
         <?php include './Includes/MobileBottomNav.php';?>
-        <!-- End Alsó Nav -->
+        <!-- End Mobil Alsó Nav -->
 
     </body>
 </html>

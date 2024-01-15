@@ -31,7 +31,7 @@
             $order = "<br>Order Number: " . test_input($orderNumber) . "<br>";
         }
 
-        $to = "malako.cakeshop@gmail.com";
+        $to = "vinylmasters@gmail.com";
         $subject = "Contact Form from $name";
         $note = $message . $tel . $order;
         $headers = "From: $email \r\n";
