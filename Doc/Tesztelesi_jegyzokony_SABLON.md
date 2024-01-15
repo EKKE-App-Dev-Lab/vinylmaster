@@ -14,14 +14,31 @@
 
 | Azonosító | Teszt leírása | Elvárt viselkedés | Eredmény |
 |-----------|---------------|-------------------|----------|
-| TEST_00100 | A weboldal Kezdőoldal megnyitása | A weboldal sikeresen jelenjen meg |  |
-
-
-
-
-
-
-
+| TEST_00100 | A weboldal Kezdőoldal megnyitása | A weboldal sikeresen jelenjen meg | OK |
+| TEST_00101 | A Kezdőoldal menü megjelenése | A weboldal menüje megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal slider megjelenése | A slider megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal slider működése | A slider cserélje a képeket és a szöveget | OK |
+| TEST_00103 | A Kezdőoldal különleges ajánlatai szekció megjelenése | A szekció megfelelő módon jelenjen meg | OK |
+| TEST_00105 | A Kezdőoldal különleges ajánlat szekció visszaszámlálása | A számláló működjön | OK |
+| TEST_00105 | A Kezdőoldal különleges ajánlat szekció "Vásárolj most" gomb kipróbálása | Jelenjenek meg a termékek | OK |
+| TEST_00105 | A Kezdőoldal megrendelés menete szekció megjelenése | A szekció megfelelő módon jelenjen meg | OK |
+| TEST_00106 | A Kezdőoldal csapatunk szekció megjelenése | A szekció megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal térkép szekció megjelenése | A térkép megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal térkép szekció cím mutatása | A térkép a megfelelő cimmel jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció megjelenése | A szekció megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása adatok nélkül | Sikertelen üzenet küldés, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása helytelen adatokkal, Email | Sikertelen üzenet küldés, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása helytelen adatokkal, Telefonszám | Sikertelen üzenet küldés, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása helytelen adatokkal, Név | Sikertelen üzenet küldés, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása helytelen adatokkal, Email | Sikertelen üzenet küldés, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal kapcsolatfelvétel szekció üzenet küldés kipróbálása helyes adatokkal, Email | Sikeres üzenet küldés és visszajelzés | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció megjelenése megfelelő módon | A szekció megfelelő módon jelenjen meg | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció felíratkozás kipróbálása helytelen adatokkal | Sikertelen felíratkozás, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció felíratkozás kipróbálása helyes adatokkal, regisztráció nélkül | Sikertelen felíratkozás, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció felíratkozás kipróbálása, már felíratkozottként | Sikertelen felíratkozás, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció felíratkozás kipróbálása, regisztrálás nélkül | Sikertelen felíratkozás, hiba jelzése | OK |
+| TEST_00102 | A Kezdőoldal hírlevél szekció felíratkozás kipróbálása, regisztráltként, nem felíratkozottként | Sikeres felíratkozás, visszajelzés | OK |
+| TEST_00102 | A Kezdőoldal lábléc szekció megjelenése | A weboldal menüje megfelelő módon jelenjen meg | OK |
 | TEST1_00200 | A regisztrációs felület elérése | A felület legyen elérhető |  |
 | TEST1_00201 | A regisztrációs felület kipróbálása helyes adatokkal | Sikeres regisztráció, megerősítő email kiküldése |  |
 | TEST1_00202 | A regisztrációs felület kipróbálása helytelen adatokkal, Felhasználónév | Sikertelen regisztráció, hiba jelzése |  |
