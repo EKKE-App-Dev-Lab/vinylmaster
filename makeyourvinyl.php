@@ -135,10 +135,19 @@ include "./AdditionalPHP/startSession.php";
                     </div>
                         <p class="offer-data">Vedd fel velünk a kapcsolatot, és kezdjünk el dolgozni azon, hogy valóra váltsuk zenei álmaidat bakelit formájában. Lépj velünk kapcsolatba a <a href="mailto:vinylmasters@gmail.com?subject=Saját Bakelit Rendelés">vinylmasters@gmail.com</a>címen, és hozzuk létre együtt azt a bakelit lemezt, ami többet mond, mint ezer szó.</p>
                     </div>
+                    <br><br>
                 </div>
             </div>
         </section>
         <!--Különleges ajánlat vége-->
+
+        <!--Start Wave Image-->
+        <div class="wave-image-group">
+            <div class="wave-image footer-wave">
+                <img src="Assets/images/1.index/NavBar_WaveGrey.png">
+            </div>
+        </div>
+        <!--End Wave Image-->
 
         <!--Start Footer-->
         <?php include './Includes/Footer.php';?>
