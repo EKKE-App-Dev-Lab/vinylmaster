@@ -93,7 +93,8 @@ biztonságosabb jelszóra.
 
 #### Regisztrált felhasználói fiók törlése:
 
-[//]: # (TODO)
+A regisztrált felhasználónak leheetősége van törölni a fiókját. Minden a felhasználóhoz kapcsolódó a rendszerben tárolt
+adat törlésre kerül. A törlés fizikai törlés azaz nincsen lehetőség a törölt felhasználó visszaállítására. 
 
 #### Vásárlás
 
