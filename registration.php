@@ -246,7 +246,7 @@ function test_input($data) {
             <input type="password" name="password" placeholder="Jelszó"/>
             <span class="Password-Error"><?php echo $confirmPasswordCriteria;?></span>
             <input type="password" name="confirmPassword" placeholder="Jelszó újra"/>
-            <span class=recaptcha-Error"><?php echo $recaptchaCriteria;?></span>
+            <span class="recaptcha-Error"><?php echo $recaptchaCriteria;?></span>
             <div name="g-recaptcha-response" class="g-recaptcha" data-sitekey="6Ld1nA0aAAAAAA7F7eJOY7CMwg7aaQAfg3WZy6P0"></div>
             <button>Regisztráció</button>
             <p class="message">Már van fiókod? <a href="login.php">Lépj be!</a></p>
