@@ -81,7 +81,13 @@
 | TEST1_00820 | A Rendelési összesítő Lejárati dátum Év helytelen megadása | Hiba a Tovább a pénztárhoz gombra kattintva |  |
 | TEST1_00821 | A Rendelési összesítő Lejárati dátum CVV helytelen megadása | Hiba a Tovább a pénztárhoz gombra kattintva |  |
 | TEST1_00822 | A Rendelési összesítő Kosár tételenkéni összesítés | A felsorolás, a tételenkénti teljes összegek valamint a Végösszeg helyes |  |
-| TEST1_00900 | A weboldal Készíts saját bakelitet megnyitása | A felület legyen elérhető |  |
+| TEST1_00900 | A weboldal Készíts saját bakelitet oldal megnyitása | A felület legyen elérhető és reszponzív|  |
+| TEST1_00901 | A weboldal Készíts saját bakelitet oldal tetején Menüsor | A menüsor megjelenik |  |
+| TEST1_00901 | A weboldal Készíts saját bakelitet oldal tetején Menüsor |KÜLÖNLEGES SZOLGÁLTATÁSUNK szekció megjelenik |  |
+| TEST1_00901 | A weboldal Készíts saját bakelitet oldal tetején Menüsor |AJÁNLATUNK szekció megjelenik |  |
+| TEST1_00901 | A weboldal Készíts saját bakelitet oldal tetején Menüsor |AJÁNLATUNK szekcióban link kattitntható és megfelelő email klienssel megnyitható |  |
+| TEST1_01011 | A weboldal Készíts saját bakelitet oldal Lábjegyzet szekció megjelenítés | Cégnév, címadatok, elérhetőségek látszódnak |  |
+| TEST1_01012 | A weboldal Készíts saját bakelitet oldal Lábjegyzet Adatkezelési tájékoztató és ÁSZF | Kattintásra a dokumentumok megnyílnak a böngészőben |  |
 
 
 
