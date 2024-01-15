@@ -49,7 +49,7 @@ felhasználó megkapja a belépett felhasználó jogait.
 
 ##### Keresés az eladó termékek között:
 
-  [//]: # (TODO keresési folyamat kifejtése)
+[//]: # (TODO keresési folyamat kifejtése)
 
 #### Regisztráció a rendszerben:
 
@@ -80,6 +80,10 @@ információi védettek és biztonságban maradjanak a rendszerben.
 Regisztrált felhasználóinknak lehetőségük van bejelentkezni a rendszerbe, megadva az azonosítójukat (felhasználónév) és
 jelszavukat.
 
+#### Kijelentkezés:
+
+[//]: # (TODO)
+
 #### Jelszó helyreállítása:
 
 Ha a regisztrált felhasználó elfelejtette jelszavát, lehetősége van a jelszó helyreállítására. Ebben az esetben egy új,
@@ -94,11 +98,29 @@ biztonságosabb jelszóra.
 #### Regisztrált felhasználói fiók törlése:
 
 A regisztrált felhasználónak leheetősége van törölni a fiókját. Minden a felhasználóhoz kapcsolódó a rendszerben tárolt
-adat törlésre kerül. A törlés fizikai törlés azaz nincsen lehetőség a törölt felhasználó visszaállítására. 
+adat törlésre kerül. A törlés fizikai törlés azaz nincsen lehetőség a törölt felhasználó visszaállítására.
 
-#### Vásárlás
+#### Vásárlás:
 
-[//]: # (TODO)
+A vásárlás során a felhasználónak lehetősége van a keresés során visszakapott termékekből vásárolni.
+Ennek a lépései a következőek:
+
+- A megvásárolandó termék kikeresése.
+- A megvásárolandó termék vásárlói kosárba helyezése.
+- A kosár véglegesítése. A véglegesítés során lehetősége van a regisztrált felhasználónak (vásárlónak) még egyszer
+  meggyőződni a kosár tartalmáról. A vásárlás véglegesítéséhez az alábbi adatok szükségesek:
+
+| Szükséges adatok         |
+|--------------------------|
+| Számlázási cím           |
+| Szállítási cím           |
+| Fizetési mód választása  |
+| Fizetési adatok megadása |
+
+- Validáció után a rendszer regisztrálja a vásárlási szándékot, értesíti, mind az eladót és a vásárlót a vásárlásról,
+  majd a frissíti a készletinformációkat is.
+- A felhasználót a rendszer a felületen értesíti a vásárálás sikerességéről, majd üríti a vásárlói kosarat, hiszen az
+  ottani termékek már megvásárlásra kerültek.
 
 ### Üzleti folyamatok admin (super user) felhasználók számára
 
@@ -134,14 +156,15 @@ A rendszerbe való bejelentkezés előtt elérhető oldalak a menüből:
 - Rólunk
 - Kapcsolatfelvétel
 - Bejelentkezés, csak ikonnal jelezve
-  
+
 A rendszerbe való bejelentkezés után elérhető oldalak a menüből:
+
 - Bevásárolókosár, csak ikonnal jelezve. Ezen látszik az is, hogy hány terméket tartalmaz a kosár
 
 Láblécben is találhatóak további menüpontok, amelyek minden eszközön elérhetőek, ezek a következőek:
+
 - Adatkezelési tájékoztató
 - Felhasználói feltételek
-
 
 ### 5.4 Képernyőtervek
 
@@ -167,13 +190,10 @@ Főbb oldalak:
 * **cart.php**, a bejelentkezett felhasználó kosár tartalmának megjelenítéséhez
 
 ## 6. Fizikai környezet
-Szerver oldalon egy Apache-ot, PHP-t és MySQL adatbázist futtatni képes operációs rendszer és az ehhez megfelelő hardverrel ellátott eszköz.
 
 Kliens oldalon egy modern böngészőt futtatni képes operációs rendszerre van szükség (és ettől függően egy megfelelő hardverrel ellátott eszközre). Az oldal struktúrájáért a HTML, a megjelenítésért a CSS valamint Bootstrap és az interakciókért a JavaScript felelős.
 
 ## 7. Absztrakt domain modell
-
-
 
 ## 8. Architekturális terv
 
@@ -200,23 +220,20 @@ Az alábbi ábra mutatja az adatbázis felépítését:
 
 ![img.png](adatbazis.png)
 
-
 ## 10. Implementációs terv
 
-
-
 ## 11. Tesztterv
-
-
 
 ## 12. Telepítési terv
 
 Helyi gépre való telepítés esetén a következőkre lesz szükség:
+
 - Egy webszerver környezetre, ami tudja az Apache/PHP/MySQL hármast.
 - Egy modern böngészőt futtatni képes operációs rendszer (és az ehhez megfelelő hardverrel ellátott eszköz).
 - Egy modern böngésző.
 
 Webtárhelyre való telepítés esetén a következőkre lesz szükség:
+
 - Egy a Apache/PHP/MySQL hármast támogató tárhely.
 - Egy program, amivel FTP kapcsolaton keresztül feltölthetők a webalkalmazás fájljai.
 - Egy modern böngésző.
