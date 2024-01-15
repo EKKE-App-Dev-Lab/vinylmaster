@@ -6,6 +6,13 @@ include "./AdditionalPHP/startSession.php";
 <?php
 include "connection.php";
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 $uname = $password= "";
 $errCriteria = "";
 
@@ -57,18 +64,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if(mysqli_query($conn, $sql)){
 
                         $to = $row['email'];
-                        $subject = "Email Verification";
-                        $message = "<a href='http://localhost/MyFiles/CakeShop/verifyEmail.php?vkey=$vkey'>Register Account</a>";
+                        $subject = "Emailcím megerősítése - Vinylmaster";
+                        $message = "<a href='http://localhost/MyFiles/CakeShop/verifyEmail.php?vkey=$vkey'>Fiók regisztrációja</a>";
+                        $altMessage = "Fiók aktiválása az alábbi linken lehetséges: http://localhost/MyFiles/CakeShop/verifyEmail.php?vkey=$vkey";
                         $headers = "From: asd.asd@gmail.com \r\n";
                         $headers .= "MIME-Version: 1.0" . "\r\n";
                         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-                        mail($to, $subject, $message, $headers);
+                        $mail = new PHPMailer(true);
 
-                        setcookie("thankYouCookie", "verificationEmailSent");
-                        setcookie("verifiedEmailCookie", "emailInvalid", time() - 3600);
-                        header('location: thankYouRegistration.php');
+                        try {
+                            $mail->CharSet = 'utf-8';
+                            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+                            $mail->isSMTP();
+                            $mail->Host = 'smtp.gmail.com';
+                            $mail->SMTPAuth = true;
+                            $mail->Username = 'vinylmasters.hungary@gmail.com';
+                            $mail->Password = 'wrlbddenzoendmbz';
+                            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                            $mail->Port = 465;
 
+                            $mail->setFrom('vinylmasters.hungary@gmail.com', 'Vinylmaster');
+                            $mail->addAddress($to);
+
+                            $mail->isHTML(true);
+                            $mail->Subject = $subject;
+                            $mail->Body = $message;
+                            $mail->AltBody = $altMessage;
+
+                            $mail->send();
+
+//                        mail($to, $subject, $message, $headers);
+
+                            setcookie("thankYouCookie", "verificationEmailSent");
+                            setcookie("verifiedEmailCookie", "emailInvalid", time() - 3600);
+                            header('location: thankYouRegistration.php');
+                            $mail->smtpClose();
+                        } catch (Exception $e) {
+                            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                        }
                     }
                 }
                 else {

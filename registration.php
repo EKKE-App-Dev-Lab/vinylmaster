@@ -6,6 +6,13 @@ include "./AdditionalPHP/startSession.php";
 <?php
 include "connection.php";
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 $uname = $fname = $lname = $email = $password= "";
 $passwordCriteria = "";
 $fnameCriteria = "";
@@ -153,19 +160,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $to = $email;
                 $subject = "Email megerősítése - VINYLMASTER";
                 $message = "<a href='http://localhost/Cake-Shop-Website/verifyEmail.php?vkey=$vkey'>Register Account</a>";
-                $headers = "From: vinylmasters@gmail.com \r\n";
+                $altMessage = "Email megerősítéshez szükséges link: http://localhost/Cake-Shop-Website/verifyEmail.php?vkey=$vkey";
+                $headers = "From: vinylmasters.hungary@gmail.com \r\n";
                 $headers .= "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-                mail($to, $subject, $message, $headers);
-                setcookie("thankYouCookie", "verificationEmailSent");
-                header('location: thankYouRegistration.php');
+                //mail($to, $subject, $message, $headers);
+                $mail = new PHPMailer(true);
 
-                $lastUserID = mysqli_insert_id($conn);
+                try {
+                    $mail->CharSet = 'utf-8';
+                    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.gmail.com';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'vinylmasters.hungary@gmail.com';
+                    $mail->Password = 'wrlbddenzoendmbz';
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                    $mail->Port = 465;
 
-                $sql = "INSERT INTO cart (userID) VALUES ($lastUserID);";
+                    $mail->setFrom('vinylmasters.hungary@gmail.com', 'Vinylmaster');
+                    $mail->addAddress($to);
 
-                mysqli_query($conn, $sql);
+                    $mail->isHTML(true);
+                    $mail->Subject = $subject;
+                    $mail->Body = $message;
+                    $mail->AltBody = $altMessage;
+
+                    $mail->send();
+                    $mail->smtpClose();
+
+                    setcookie("thankYouCookie", "verificationEmailSent");
+                    header('location: thankYouRegistration.php');
+                    $lastUserID = mysqli_insert_id($conn);
+
+                    $sql = "INSERT INTO cart (userID) VALUES ($lastUserID);";
+
+                    mysqli_query($conn, $sql);
+
+                } catch (Exception $e) {
+                    echo "Az üzenet küldése sikertelen. Mailer Error: {$mail->ErrorInfo}";
+                }
             }
         }
     }

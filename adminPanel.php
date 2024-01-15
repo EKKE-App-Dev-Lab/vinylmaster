@@ -2,8 +2,16 @@
     include "./AdditionalPHP/startSession.php";
     include "./AdditionalPHP/checkAccess.php";
 
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+
     $uname = $_SESSION['uname'];
-    
+
     include "connection.php";
 
     $sql = "SELECT * FROM user WHERE uname='$uname'";
@@ -31,7 +39,7 @@
             if(!empty($_POST['message'])) {
 
                 $message = test_input($_POST['message']);
-                
+
                 $sql = "SELECT email FROM user WHERE isSubscribed = 1";
                 $result = mysqli_query($conn, $sql);
 
@@ -43,7 +51,7 @@
                         $emailArray[] =  $row['email'];
                     }
 
-                    $to = "asd.asd@gmail.com";
+                    $to = "vinylmasters.hungary@gmail.com";
                     if(isset($_POST['subject']))
                     {
                         $subject = test_input($_POST['subject']);
@@ -54,7 +62,36 @@
                     $headers .= "MIME-Version: 1.0" . "\r\n";
                     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-                    mail($to, $subject, $msg, $headers);
+//                    mail($to, $subject, $msg, $headers);
+
+                    $mail = new PHPMailer(true);
+
+                    try {
+                        $mail->CharSet = 'utf-8';
+                        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+                        $mail->isSMTP();
+                        $mail->Host = 'smtp.gmail.com';
+                        $mail->SMTPAuth = true;
+                        $mail->Username = 'vinylmasters.hungary@gmail.com';
+                        $mail->Password = 'wrlbddenzoendmbz';
+                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                        $mail->Port = 465;
+
+                        $mail->setFrom('vinylmasters.hungary@gmail.com', 'Vinylmaster');
+                        $mail->addAddress($to);
+
+                        $mail->isHTML(true);
+                        $mail->Subject = $subject;
+                        $mail->Body = $msg;
+                        $mail->AltBody = $msg;
+
+                        $mail->send();
+                        $mail->smtpClose();
+
+                    } catch (Exception $e) {
+                        echo "Az üzenet küldése sikertelen. Mailer Error: {$mail->ErrorInfo}";
+                    }
+
                     // megakadályozza a levelek újabb elküldését minden oldalfrissítés alkalmával.
                     header("location: $_SERVER[PHP_SELF]");
                 }
@@ -83,7 +120,7 @@
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
         <!-- Bootstrap CDN -->
         <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
-        
+
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -104,7 +141,7 @@
         <?php include './Includes/PcNavBar.php';?>
         <!--End Navigation Bar @media 1200px-->
 
-        
+
         <!-- Start Header -->
         <div id="screenRes" class="col-md-15">
             <div class="form-name-container">
@@ -113,7 +150,7 @@
                         <h2>ADMIN PANEL</h2>
                     </div>
                 </div>
-                
+
                 <div class="admin-subtitle">
                     <span><i class="fas fa-user-cog"></i></span>
                     <span>&nbspHELLO <?php echo $titleName;?></span>
@@ -130,7 +167,7 @@
                 <li class="active"><a data-toggle="pill" href="#home">Profil szerkeztése</a></li>
                 <li><a data-toggle="pill" href="#sendMail">Levél küldése</a></li>
             </ul>
-            
+
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <div class="tab-title">
@@ -140,8 +177,8 @@
                     <?php include './Includes/userProfile.php'; ?>
                     <!-- End User Profile -->
                 </div>
-                
-                        
+
+
                 <div id="sendMail" class="tab-pane fade">
                     <div class="tab-title">
                         <h3>Levél küldése a felíratkozóknak</h3>
@@ -156,7 +193,7 @@
                             <label>Tárgy:</label>
                             <input class="form-control input-md" name="subject" type="text" placeholder="Add meg a levél tárgyát" required>
                             <br>
-                            
+
                             <div class="textAreaContainer">
                                 <textarea rows="10" id="summernote" name="message">
                                     
@@ -164,8 +201,8 @@
                             </div>
                         </form>
                     </div>
-                    
-                        
+
+
                     <script>
                         $(document).ready(function() {
                             $('#summernote').summernote({

@@ -1,4 +1,11 @@
-<?php 
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
     function test_input($data) {
         $data = trim($data);
@@ -31,16 +38,42 @@
             $order = "<br>Order Number: " . test_input($orderNumber) . "<br>";
         }
 
-        $to = "vinylmasters@gmail.com";
-        $subject = "Contact Form from $name";
-        $note = $message . $tel . $order;
+        $to = "vinylmasters.hungary@gmail.com";
+        $subject = "Üzenet - küldte $name";
+        $message = "<b>Üzenet: $message</b><br>Telefonszám: <b>$tel</b><br><b>Rendelés: $order</b>";
+        $altMessage = $message . $tel . $order;
         $headers = "From: $email \r\n";
         $headers .= "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-        mail($to, $subject, $note, $headers);
-        echo "Üzenet elküldve";
-    } else {
-        echo "Üzenet küldése sikertelen!";
+//        mail($to, $subject, $note, $headers);
+        $mail = new PHPMailer(true);
+
+        try {
+            $mail->CharSet = 'utf-8';
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'vinylmasters.hungary@gmail.com';
+            $mail->Password = 'wrlbddenzoendmbz';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Port = 465;
+
+            $mail->setFrom('vinylmasters.hungary@gmail.com', 'Vinylmaster');
+            $mail->addAddress($to);
+
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body = $message;
+            $mail->AltBody = $altMessage;
+
+            $mail->send();
+            $mail->smtpClose();
+
+            echo "Üzenet elküldve";
+        } catch (Exception $e) {
+            echo "Az üzenet küldése sikertelen. Mailer Error: {$mail->ErrorInfo}";
+        }
     }
 ?>
