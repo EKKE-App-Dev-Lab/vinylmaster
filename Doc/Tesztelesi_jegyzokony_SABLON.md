@@ -14,7 +14,7 @@
 
 | Azonosító | Teszt leírása | Elvárt viselkedés | Eredmény |
 |-----------|---------------|-------------------|----------|
-| TEST_00100 | A weboldal Kezdőoldal megnyitása | A weboldal sikeresen jelenjen meg | OK |
+| TEST1_00100 | A weboldal Kezdőoldal megnyitása | A weboldal sikeresen jelenjen meg | OK |
 | TEST_00101 | A Kezdőoldal menü megjelenése | A weboldal menüje megfelelő módon jelenjen meg | OK |
 | TEST_00102 | A Kezdőoldal slider megjelenése | A slider megfelelő módon jelenjen meg | OK |
 | TEST_00102 | A Kezdőoldal slider működése | A slider cserélje a képeket és a szöveget | OK |
@@ -98,7 +98,13 @@
 | TEST1_00820 | A Rendelési összesítő Lejárati dátum Év helytelen megadása | Hiba a Tovább a pénztárhoz gombra kattintva |  |
 | TEST1_00821 | A Rendelési összesítő Lejárati dátum CVV helytelen megadása | Hiba a Tovább a pénztárhoz gombra kattintva |  |
 | TEST1_00822 | A Rendelési összesítő Kosár tételenkéni összesítés | A felsorolás, a tételenkénti teljes összegek valamint a Végösszeg helyes |  |
-| TEST1_00900 | A weboldal Készíts saját bakelitet megnyitása | A felület legyen elérhető |  |
+| TEST1_00900 | A weboldal Készíts saját bakelitet oldal megnyitása | A felület legyen elérhető és reszponzív|  |
+| TEST1_00901 | A weboldal Készíts saját bakelitet oldal tetején Menüsor | A menüsor megjelenik |  |
+| TEST1_00902 | A weboldal Készíts saját bakelitet oldal tetején Menüsor | KÜLÖNLEGES SZOLGÁLTATÁSUNK szekció megjelenik |  |
+| TEST1_00903 | A weboldal Készíts saját bakelitet oldal tetején Menüsor | AJÁNLATUNK szekció megjelenik |  |
+| TEST1_00904 | A weboldal Készíts saját bakelitet oldal tetején Menüsor | AJÁNLATUNK szekcióban link kattitntható és megfelelő email klienssel megnyitható |  |
+| TEST1_00905 | A weboldal Készíts saját bakelitet oldal Lábjegyzet szekció megjelenítés | Cégnév, címadatok, elérhetőségek látszódnak |  |
+| TEST1_00906 | A weboldal Készíts saját bakelitet oldal Lábjegyzet Adatkezelési tájékoztató és ÁSZF | Kattintásra a dokumentumok megnyílnak a böngészőben |  |
 
 
 
@@ -106,13 +112,27 @@
 
 
 
-| TEST1_01000 | A weboldal Rólunk megnyitása | A felület legyen elérhető |  |
-
-
-
-
-
-
-
-
+| TEST1_01000 | A weboldal Rólunk oldal megnyitása | A felület legyen elérhető és reszponzív |  |
+| TEST1_01001 | A weboldal Rólunk oldal tetején Menüsor | A menüsor megjelenik |  |
+| TEST1_01002 | A weboldal Rólunk oldal Cégtulajdonos szekció | Fotó, bemutatkozás, aláírás megjelenik |  |
+| TEST1_01003 | A weboldal Rólunk oldal Kitüntetések szekció | Legutóbbi kitüntetések évszámmal, leírással megjelenik |  |
+| TEST1_01004 | A weboldal Rólunk oldal Csapatunk szekció | Csapat tagjainak fotói, neve, beosztása, mottója és ikonok közösségi oldalaikhoz megjelenik |  |
+| TEST1_01005 | A weboldal Rólunk oldal Itt találhatsz meg minket szekció | Google maps térkép megjelenik a cég címével |  |
+| TEST1_01006 | A weboldal Rólunk oldal Kapcsolatfelvétel űrlap szekció | Űrlap megfelelően megjelenik |  |
+| TEST1_01007 | A weboldal Rólunk oldal Kapcsolatfelvétel űrlap adatok helyes megadása | Küldés gombra kattintva üzenet küldés a beállított e-mail címre |  |
+| TEST1_01008 | A weboldal Rólunk oldal Kapcsolatfelvétel űrlap adatok helytelen megadása | Hibaüzenet, javítás kérése a megfelelő mező adatainak |  |
+| TEST1_01009 | A weboldal Rólunk oldal Hírlevél szekció helyes e-mail cím megadása | Feliratkozom gombra kattintás esetén hozzáadás az adatbázishoz és megerősítő üzenet a képernyőre sikeres feliratkozásról |  |
+| TEST1_01010 | A weboldal Rólunk oldal Hírlevél szekció helytelen e-mail cím megadása | Hibaüzenet a Feliratkozom gombra kattintás esetén |  |
+| TEST1_01011 | A weboldal Rólunk oldal Lábjegyzet szekció megjelenítés | Cégnév, címadatok, elérhetőségek látszódnak |  |
+| TEST1_01012 | A weboldal Rólunk oldal Lábjegyzet Adatkezelési tájékoztató és ÁSZF | Kattintásra a dokumentumok megnyílnak a böngészőben |  |
 | TEST1_01100 | A weboldal Kapcsolat megnyitása | A felület legyen elérhető |  |
+| TEST1_01100 | A weboldal Kapcsolat oldal megnyitása | A felület legyen elérhető és reszponzív |  |
+| TEST1_01101 | A weboldal Kapcsolat oldal tetején Menüsor | A menüsor megjelenik |  |
+| TEST1_01105 | A weboldal Kapcsolat oldal Itt találhatsz meg minket szekció | Google maps térkép megjelenik a cég címével |  |
+| TEST1_01106 | A weboldal Kapcsolat oldal Kapcsolatfelvétel űrlap szekció |A kapcsolatfelvételi szekcióban minden szükséges mező (név, email, telefon, megrendelőszám, üzenet, küldés gomb stb.) megjelenik |  |
+| TEST1_01107 | A weboldal Kapcsolat oldal Kapcsolatfelvétel űrlap adatok helyes megadása | Küldés gombra kattintva üzenet küldés a beállított e-mail címre |  |
+| TEST1_01108 | A weboldal Kapcsolat oldal Kapcsolatfelvétel űrlap adatok helytelen megadása | Hibaüzenet, javítás kérése a megfelelő mező adatainak |  |
+| TEST1_01109 | A weboldal Kapcsolat oldal Hírlevél szekció helyes e-mail cím megadása | Feliratkozom gombra kattintás esetén hozzáadás az adatbázishoz és megerősítő üzenet a képernyőre sikeres feliratkozásról |  |
+| TEST1_01110 | A weboldal Kapcsolat oldal Hírlevél szekció helytelen e-mail cím megadása | Hibaüzenet a Feliratkozom gombra kattintás esetén |  |
+| TEST1_01111 | A weboldal Kapcsolat oldal Lábjegyzet szekció megjelenítés | Cégnév, címadatok, elérhetőségek látszódnak |  |
+| TEST1_01112 | A weboldal Kapcsolat oldal Lábjegyzet Adatkezelési tájékoztató és ÁSZF | Kattintásra a dokumentumok megnyílnak a böngészőben |  |
