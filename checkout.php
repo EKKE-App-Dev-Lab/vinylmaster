@@ -361,7 +361,7 @@ function test_input($data)
 
                         <!-- KREDIT KÁRTYA SZÁM  -->
                         <div class="col-md-6">
-                            <label for="cc-number" class="form-label">Kredit kártya szám</label>
+                            <label for="cc-number" class="form-label">Bankkártya szám</label>
                             <input type="text" class="form-control" name="ccnum" id="cc-number" placeholder=""
                                    value="<?php echo $ccnum; ?>" required>
                             <div class="invalid-feedback">
