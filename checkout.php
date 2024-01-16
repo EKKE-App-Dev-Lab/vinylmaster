@@ -15,14 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //KERESZTNÉV VALIDÁLÁSA
     $fname = test_input($_POST["fname"]);
     // leellenőrzi, hogy csak betűket és spacet tartalmaz-e
-    if (!preg_match("/^[a-zA-Z-' ]*$/", $fname)) {
+    if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+$/", $fname)) {
         $fnameErr = "Csak betű és szóköz engedélyezett";
     }
 
     //VEZETÉKNÉV VALIDÁLÁSA
     $lname = test_input($_POST["lname"]);
     // leellenőrzi, hogy csak betűket és spacet tartalmaz-e
-    if (!preg_match("/^[a-zA-Z-' ]*$/", $lname)) {
+    if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+([- ][A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+)?$/", $lname)) {
         $lnameErr = "Csak betű és szóköz engedélyezett";
     }
 
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //VÁROS VALIDÁLÁSA
     $city = test_input($_POST["city"]);
     // ellenőrzi, hogy city == options
-    if ($city == "Port Louis" || $city == "Curepipe" || $city == "Vacoas" || $city == "Quatre Bornes" || $city == "Rose Hill" || $city == "Flic En Flac" || $city == "Phoenix") {
+    if ($city == "Budapest" || $city == "Veresegyház" || $city == "Biatorbágy" || $city == "Concó" || $city == "Bugyi" || $city == "Piripócs" || $city == "Szabadka") {
         //valid
     } else {
         $cityErr = "Érvénytelen város";
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //IRÁNYÍTÓSZÁM VALIDÁLÁSA
     $zip = test_input($_POST["zip"]);
     // ellenőrzi, hogy az irányítószám pontosan 5 számjegyet tartalmaz.
-    if (!preg_match("/^[0-9]{5}/", $zip)) {
+    if (!preg_match("/^[0-9]{4}/", $zip)) {
         $zipErr = "Érvénytelen irányítószám";
     }
 
@@ -256,7 +256,14 @@ function test_input($data)
                             <span class="error"><?php echo $lnameErr; ?></span>
                         </div>
 
-                        <!-- <?php echo $email; ?><?php echo $emailErr; ?>-->
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Opcionális)</span></label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="név@cím.com" value="<?php echo $email; ?>">
+                            <div class="invalid-feedback">
+                                Érvényes email cím szükséges, hogy naprakész adatokat kapj a szállítással kapcsolatban.
+                            </div>
+                            <span class="error"><?php echo $emailErr;?></span>
+                        </div>
 
                         <!-- CÍM MEGADÁSA -->
                         <div class="col-12">
