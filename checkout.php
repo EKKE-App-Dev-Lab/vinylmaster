@@ -256,7 +256,14 @@ function test_input($data)
                             <span class="error"><?php echo $lnameErr; ?></span>
                         </div>
 
-                        <!-- <?php echo $email; ?><?php echo $emailErr; ?>-->
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Opcionális)</span></label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="név@cím.com" value="<?php echo $email; ?>">
+                            <div class="invalid-feedback">
+                                Érvényes email cím szükséges, hogy naprakész adatokat kapj a szállítással kapcsolatban.
+                            </div>
+                            <span class="error"><?php echo $emailErr;?></span>
+                        </div>
 
                         <!-- CÍM MEGADÁSA -->
                         <div class="col-12">
