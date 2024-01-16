@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //VÁROS VALIDÁLÁSA
     $city = test_input($_POST["city"]);
     // ellenőrzi, hogy city == options
-    if ($city == "Port Louis" || $city == "Curepipe" || $city == "Vacoas" || $city == "Quatre Bornes" || $city == "Rose Hill" || $city == "Flic En Flac" || $city == "Phoenix") {
+    if ($city == "Budapest" || $city == "Veresegyház" || $city == "Biatorbágy" || $city == "Concó" || $city == "Bugyi" || $city == "Piripócs" || $city == "Szabadka") {
         //valid
     } else {
         $cityErr = "Érvénytelen város";
