@@ -22,7 +22,7 @@
 | TEST1_00105 | A Kezdőoldal különleges ajánlat szekció visszaszámlálása | A számláló működjön | |
 | TEST1_00106 | A Kezdőoldal különleges ajánlat szekció "Vásárolj most" gomb kipróbálása | Jelenjenek meg a termékek | |
 | TEST1_00107 | A Kezdőoldal megrendelés menete szekció megjelenése | A szekció megfelelő módon jelenjen meg | |
-| TEST1_00108 | A Kezdőoldal csapatunk szekció megjelenése | A szekció megfelelő módon jelenjen meg ||
+| TEST1_00108 | A Kezdőoldal csapatunk szekció megjelenése | A szekció megfelelő módon jelenjen meg | |
 | TEST1_00109 | A Kezdőoldal térkép szekció megjelenése | A térkép megfelelő módon jelenjen meg | |
 | TEST1_00110 | A Kezdőoldal térkép szekció cím mutatása | A térkép a megfelelő cimmel jelenjen meg | |
 | TEST1_00111 | A Kezdőoldal kapcsolatfelvétel szekció megjelenése | A szekció megfelelő módon jelenjen meg | |
