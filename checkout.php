@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //IRÁNYÍTÓSZÁM VALIDÁLÁSA
     $zip = test_input($_POST["zip"]);
     // ellenőrzi, hogy az irányítószám pontosan 5 számjegyet tartalmaz.
-    if (!preg_match("/^[0-9]{5}/", $zip)) {
+    if (!preg_match("/^[0-9]{4}/", $zip)) {
         $zipErr = "Érvénytelen irányítószám";
     }
 
