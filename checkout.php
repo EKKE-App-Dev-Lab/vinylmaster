@@ -16,14 +16,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = test_input($_POST["fname"]);
     // leellenőrzi, hogy csak betűket és spacet tartalmaz-e
     if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+$/", $fname)) {
-        $fnameErr = "Csak betű és szóköz engedélyezett";
+        $fnameErr = "Nagy kezdőbetű és csak betű és szóköz engedélyezett";
     }
 
     //VEZETÉKNÉV VALIDÁLÁSA
     $lname = test_input($_POST["lname"]);
     // leellenőrzi, hogy csak betűket és spacet tartalmaz-e
-    if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+([- ][A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+)?$/", $lname)) {
-        $lnameErr = "Csak betű és szóköz engedélyezett";
+    if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+$/", $lname)) {
+        $lnameErr = "Nagy kezdőbetű és csak betű és szóköz engedélyezett";
     }
 
     //EMAIL VALIDÁLÁSA
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //CÍM VALIDÁLÁSA
     $address = test_input($_POST["address_checkout"]);
     // Ellenőrizze, hogy a cím számmal kezdődik-e, azt követik-e betűk, tartalmaz-e szóközt, kötőjelet és vesszőt.
-    if (!preg_match("/^[0-9a-zA-Z\s,-]+$/", $address)) {
+    if (!preg_match("/^[0-9a-zA-Záéíóöőúüű\s,-]+$/", $address)) {
         $addressErr = "Érvénytelen cím";
     }
 
@@ -69,8 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //HITELKÁRTYA NÉV ÉRVÉNYESSÉGELLENŐRZÉS
     $ccname = test_input($_POST["ccname"]);
     // Ellenőrzi, hogy a hitelkártya név csak betűket és szóközöket tartalmaz-e.
-    if (!preg_match("/^[a-zA-Z-' ]*$/", $ccname)) {
-        $ccnameErr = "Csak betű és szóköz engedélyezett";
+    if (!preg_match("/^([A-Za-z]{3, })\s([A-Za-z]{3, })$/", $ccname)) {
+        $ccnameErr = "Nagy kezdőbetű és csak betű és szóköz engedélyezett";
     }
 
     //HITELKÁRTYASZÁM VALIDÁLÁSA
