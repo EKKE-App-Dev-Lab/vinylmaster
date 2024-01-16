@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ccname = test_input($_POST["ccname"]);
     // Ellenőrzi, hogy a hitelkártya név csak betűket és szóközöket tartalmaz-e.
     if (!preg_match("/^([A-Za-z]{3, })\s([A-Za-z]{3, })$/", $ccname)) {
-        $ccnameErr = "Nagy kezdőbetű és csak betű és szóköz engedélyezett";
+        $ccnameErr = "Csak betű és szóköz engedélyezett";
     }
 
     //HITELKÁRTYASZÁM VALIDÁLÁSA
