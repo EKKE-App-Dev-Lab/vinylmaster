@@ -51,7 +51,7 @@ require 'PHPMailer/src/SMTP.php';
 
         try {
             $mail->CharSet = 'utf-8';
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
