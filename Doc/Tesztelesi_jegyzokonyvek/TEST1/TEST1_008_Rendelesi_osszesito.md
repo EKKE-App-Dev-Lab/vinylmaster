@@ -20,7 +20,7 @@
 | TEST1_00804 | A Rendelési összesítő Irányítószám helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
 | TEST1_00805 | A Rendelési összesítő Email helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
 | TEST1_00806 | A Rendelési összesítő Fizetési mód választható | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
-| TEST1_00807 | A Rendelési összesítő Kártyán szereplő név helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
+| TEST1_00807 | A Rendelési összesítő Kártyán szereplő név helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | NEM OK   |
 | TEST1_00808 | A Rendelési összesítő Bankkártya szám helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
 | TEST1_00809 | A Rendelési összesítő Lejárati dátum Hónap helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
 | TEST1_00810 | A Rendelési összesítő Lejárati dátum Év helyes megadása | Nincs hiba, ha az összes adat helyes a Tovább a pénztárhoz gombra kattintva | OK       |
