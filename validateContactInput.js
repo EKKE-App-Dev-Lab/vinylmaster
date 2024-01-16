@@ -20,10 +20,10 @@ if(buttonPressed.id == 'submit')
 		var allErrors = [];
 	
 		customerName.value = String(customerName.value).trim();
-		var regName = /^[a-zA-Z-' ]*$/;
+		var regName = /^[a-zA-ZÁÉÍÓÖŐÚÜŰáéíóöőúüű-' ]*$/
 		   if( !customerName.value.match(regName) )
 		{
-			nameError = "Only letters and white space allowed";
+			nameError = "Csak betűk és szóközök engedélyezettek";
 			document.getElementById( "nameError" ).innerHTML = nameError;
 			allErrors.push( nameError );
 		}
@@ -32,32 +32,31 @@ if(buttonPressed.id == 'submit')
 		var regEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 		if( !email.value.match(regEmail) )
 		{
-			emailError = "Invalid email format";
+			emailError = "Nem megfelelő email formátum";
 			document.getElementById( "emailError" ).innerHTML = emailError;
 			allErrors.push( emailError );
 		}
 	
-		if( phone.value != '' || phone.value != null )
+		if (phone.value != '' && phone.value != null) 
 		{
 			phone.value = String(phone.value).trim();
-			regPhone = /^([0-9]{8}|[0-9]{7})*$/;
-			if( !phone.value.match( regPhone ) )
-			{
-				phoneError = "Enter a valid phone number";
-				document.getElementById( "phoneError" ).innerHTML = phoneError;
-				allErrors.push( phoneError );
+			var regPhone = /^(\d{7}|\d{8}|(\d{3}[- ]\d{4}|\d{4}[- ]\d{3}|\d{4}[- ]\d{2}[- ]\d{2}))$/;
+			if (!phone.value.match(regPhone)) {
+				phoneError = "Adjon meg egy érvényes telefonszámot";
+				document.getElementById("phoneError").innerHTML = phoneError;
+				allErrors.push(phoneError);
 			}
 		}
 	
 		if(allErrors.length > 0)
 		{
 			e.preventDefault();
-			document.getElementById( "sendError" ).innerHTML = "Message Not Sent!";
+			document.getElementById( "sendError" ).innerHTML = "Az üzenet elküldése sikertelen!";
 		}
 		else
 		{
 			sendMessage();
-			document.getElementById( "sendError" ).innerHTML = "Message Sent!";
+			document.getElementById( "sendError" ).innerHTML = "Üzenet elküldve!";
 			e.preventDefault();
 		}
 	})

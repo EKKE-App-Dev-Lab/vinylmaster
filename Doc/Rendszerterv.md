@@ -271,13 +271,13 @@ A tesztelés során felmerült hibákra a Trello-ban hibajegyeket rögzítünk a
 | TEST1_00305 | A bejelentkező felületen, Elfelejtett jelszó kérelem | Új oldal megjelenítés ahol emailt kell megadni, sikeres email kiküldés új generált jelszóval |
 | TEST1_00306 | A bejelentkező felületen, Ideiglenes jelszó generálás | Email kiküldés új jelszóval |
 | TEST1_00307 | A bejelentkező felületen, Bejelentkezés újraküldött generált jelszóval | Email kiküldés új jelszóval |
-| TEST1_00401 | A felhasználó admin felületen, Helyes jelszó változtatás | Sikeres jelszó változtatás |
-| TEST1_00402 | A felhasználó admin felületen, Helytelen jelszó változtatás | Sikertelen jelszó változtatás |
-| TEST1_00403 | A felhasználó admin felületen, Helyes vezetéknév változtatás | Sikeres jelszó változtatás |
-| TEST1_00404 | A felhasználó admin felületen, Helytelen vezetéknév változtatás | Sikertelen jelszó változtatás |
-| TEST1_00405 | A felhasználó admin felületen, Helyes keresztnév változtatás | Sikeres jelszó változtatás |
-| TEST1_00406 | A felhasználó admin felületen, Helytelen keresztnév változtatás | Sikertelen jelszó változtatás |
-| TEST1_00407 | A felhasználó admin felületen, Kijelentkezés | Sikeres kijelentkezés |
+| TEST1_00400 | A felhasználó admin felületen, Helyes jelszó változtatás | Sikeres jelszó változtatás |
+| TEST1_00401 | A felhasználó admin felületen, Helytelen jelszó változtatás | Sikertelen jelszó változtatás |
+| TEST1_00402 | A felhasználó admin felületen, Helyes vezetéknév változtatás | Sikeres jelszó változtatás |
+| TEST1_00403 | A felhasználó admin felületen, Helytelen vezetéknév változtatás | Sikertelen jelszó változtatás |
+| TEST1_00404 | A felhasználó admin felületen, Helyes keresztnév változtatás | Sikeres jelszó változtatás |
+| TEST1_00405 | A felhasználó admin felületen, Helytelen keresztnév változtatás | Sikertelen jelszó változtatás |
+| TEST1_00406 | A felhasználó admin felületen, Kijelentkezés | Sikeres kijelentkezés |
 | TEST1_00500 | A weboldal Termékek megnyitása | A felület legyen elérhető |
 | TEST1_00501 | A weboldal Termékek sorbarendezése | Terméklista sorrend változik és a címsorban is megjelenik a választott opció |
 | TEST1_00502 | A weboldal Termékek kategória választás | Terméklista kínálat változik és a címsorban is megjelenik a választott opció |

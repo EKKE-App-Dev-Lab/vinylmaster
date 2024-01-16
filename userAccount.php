@@ -32,7 +32,7 @@
 <html lang="en-MU">
     <head>
         <meta charset="utf-8">
-        <title>VINYLMASTER | AZ ÉN SZÁMLÁM</title>
+        <title>VINYLMASTER | RENDELÉSI ÖSSZESÍTŐ</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
