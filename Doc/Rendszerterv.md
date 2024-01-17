@@ -99,6 +99,8 @@ ideiglenes jelszó kerül kiküldésre a felhasználó által regisztrált email
 történik a bejelentkezés, majd lehetőség adódik a jelszó azonnali cseréjére a felhasználó által választott,
 biztonságosabb jelszóra.
 
+![jelszo_helyreallitas.png](usecases%2Fjelszo_helyreallitas.png)
+
 #### Regisztrált felhasználói fiók adatainak módosítása:
 
 A regisztrált felhasználónak lehetősége van a felhasználó ikonra kattintva megváltoztatni az adatait, nevét, telefonszámát, címét vagy jelszót tud módosítani.
