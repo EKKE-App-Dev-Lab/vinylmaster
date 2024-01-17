@@ -51,8 +51,6 @@ felhasználó megkapja a belépett felhasználó jogait.
 
 A regisztrálatlan felhasználók a Termékek lapon tudnak keresni a megvásárolható termékek között, de a megvásárolni kívánt tételt nem tudják a kosarukba helyezni.
 
-![kereses.png](usecases%2Fkereses.png)
-
 #### Regisztráció a rendszerben:
 
 A még nem regisztrált vásárlók számára a következő adatok megadása szükséges a regisztráció során:
@@ -75,8 +73,6 @@ felhasználó jelszava további adatvédelmi intézkedéseket tartalmaz, ugyanis
 ezzel maximalizálva a biztonságot. Ezen eljárások együttesen hozzájárulnak ahhoz, hogy a felhasználók személyes
 információi védettek és biztonságban maradjanak a rendszerben.
 
-![regisztracio.png](usecases%2Fregisztracio.png)
-
 ### Üzleti folyamatok regisztrált felhasználók számára
 
 #### Bejelentkezés:
@@ -84,13 +80,9 @@ információi védettek és biztonságban maradjanak a rendszerben.
 Regisztrált felhasználóinknak lehetőségük van bejelentkezni a rendszerbe, megadva az azonosítójukat (felhasználónév) és
 jelszavukat.
 
-![login.png](usecases%2Flogin.png)
-
 #### Kijelentkezés:
 
 A felhasználó bejelentkezve a felhasználó ikonra kattintva az adminisztrációs felületre jut, ahol a kijelentkezés gombra kattintva tud kijelentkezni a felületről.
-
-![kijelentkezes.png](usecases%2Fkijelentkezes.png)
 
 #### Jelszó helyreállítása:
 
@@ -99,26 +91,18 @@ ideiglenes jelszó kerül kiküldésre a felhasználó által regisztrált email
 történik a bejelentkezés, majd lehetőség adódik a jelszó azonnali cseréjére a felhasználó által választott,
 biztonságosabb jelszóra.
 
-![jelszo_helyreallitas.png](usecases%2Fjelszo_helyreallitas.png)
-
 #### Regisztrált felhasználói fiók adatainak módosítása:
 
 A regisztrált felhasználónak lehetősége van a felhasználó ikonra kattintva megváltoztatni az adatait, nevét, telefonszámát, címét vagy jelszót tud módosítani.
-
-![felhasznaloi_adatok_valtoztatasa.png](usecases%2Ffelhasznaloi_adatok_valtoztatasa.png)
 
 #### Regisztrált felhasználói fiók törlése:
 
 A regisztrált felhasználónak leheetősége van törölni a fiókját. Minden a felhasználóhoz kapcsolódó a rendszerben tárolt
 adat törlésre kerül. A törlés fizikai törlés azaz nincsen lehetőség a törölt felhasználó visszaállítására.
 
-![fiok_torles.png](usecases%2Ffiok_torles.png)
-
-#### Keresés az eladó termékek között:
+#### Keresés az eladó termékek között regisztrált felhasználóként:
 
 A regisztrált felhasználók a Termékek lapon tudnak keresni a megvásárolható termékek között és a megvásárolni kívánt tételt a kosarukba helyezni.
-
-![kereses.png](usecases%2Fkereses.png)
 
 #### Vásárlás:
 
@@ -142,11 +126,13 @@ Ennek a lépései a következőek:
 - A felhasználót a rendszer a felületen értesíti a vásárálás sikerességéről, majd üríti a vásárlói kosarat, hiszen az
   ottani termékek már megvásárlásra kerültek.
 
-![vasarlas.png](usecases%2Fvasarlas.png)
-
 ### Üzleti folyamatok admin (super user) felhasználók számára
 
-[//]: # (TODO)
+Az adminisztrátor/eladó jogosultságú felhasználónak lehetősége van az alábbiakra:
+
+- új termékek felvitele
+- termékek adatainak módosítása
+- termékek törlése
 
 ### 3.3. Üzleti entitások
 
@@ -163,11 +149,49 @@ Egy PHP-t futtatni képes webszerver MySQL adatbázissal, valamint e-mail küld�
 
 - nem regisztrált böngésző
 - regisztrált vásárló
-- eladó/adminisztrátor [//]: # (TODO)
+- eladó/adminisztrátor
 
 ### 5.2 Rendszerhasználati esetek
 
+#### Keresés az eladó termékek között (nem regisztrált felhasználóknak)
+
+![kereses.png](usecases%2Fkereses.png)
+
+#### Regisztráció
+
+![regisztracio.png](usecases%2Fregisztracio.png)
+
+#### Bejelentkezés
+
 ![login.png](usecases%2Flogin.png)
+
+#### Jelszó helyreállítása
+
+![jelszo_helyreallitas.png](usecases%2Fjelszo_helyreallitas.png)
+
+#### Felhasználói fiók adatainak módosítása
+
+![felhasznaloi_adatok_valtoztatasa.png](usecases%2Ffelhasznaloi_adatok_valtoztatasa.png)
+
+#### Regisztrált felhasználói fiók törlése
+
+![fiok_torles.png](usecases%2Ffiok_torles.png)
+
+#### Keresés az eladó termékek között regisztrált felhasználóként
+
+![kereses.png](usecases%2Fkereses.png)
+
+#### Vásárlás
+
+![vasarlas.png](usecases%2Fvasarlas.png)
+
+#### Felhasználó kijelentkezés
+
+![kijelentkezes.png](usecases%2Fkijelentkezes.png)
+
+#### Adminisztrátor új termék felvitele/módosítása/törlése
+
+[//]: # (TODO)
 
 ### 5.3 Menühierarchiák
 
