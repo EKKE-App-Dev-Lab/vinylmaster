@@ -4,10 +4,10 @@ A szoftver fejlesztésekor meg kell határozni, hogy az adott részegységek mil
 
 | Sorsz.| Leírás                                       | Kategória         | Résztvevők                   | Tervezett | András  | Erik    | Levente | Tamás   | Tényleges |
 | ----- | -------------------------------------------- | ----------------- | ---------------------------- | --------- | ------- | ------- | ------- | ------- | --------- |
-| 1     | Projekt tervezése                            | Megelőző munkálat | András, Erik, Levente, Tamás | 168 óra   | 16 óra  |         |         | 10 óra  |           |
-| 2     | Környezet előkészítése (Domain, Git Projekt) | Megelőző munkálat | András, Erik, Levente, Tamás | 2 óra     | 1 óra   |         |         | 1 óra   |           |     
-| 3     | Dokumentációk elkészítése                    | Dokumentáció      | András, Erik, Levente, Tamás | 16 óra    | 5 óra   |         |         | 3 óra   |           |
-| 4     | Fejlesztés                                   | Fejlesztés        | András, Erik, Levente, Tamás | 168 óra   | 26 óra  |         |         | 20 óra  |           |
-| 5     | Tesztelés                                    | Fejlesztés        | András, Erik, Levente, Tamás | 8 óra     | 2 óra   |         |         | 2 óra   |           |
-| 6     | Hibakeresés                                  | Fejlesztés        | András, Erik, Levente, Tamás | 4 óra     | 0,5 óra |         |         | 1 óra   |           |
+| 1     | Projekt tervezése                            | Megelőző munkálat | András, Erik, Levente, Tamás | 168 óra   | 16 óra  |      10  óra  |     10 óra    | 10 óra  |      46 óra     |
+| 2     | Környezet előkészítése (Domain, Git Projekt) | Megelőző munkálat | András, Erik, Levente, Tamás | 2 óra     | 1 óra   |     2 óra    |     2 óra    | 1 óra   |      6 óra     |     
+| 3     | Dokumentációk elkészítése                    | Dokumentáció      | András, Erik, Levente, Tamás | 16 óra    | 5 óra   |    3 óra     |    2 óra     | 3 óra   |       13 óra    |
+| 4     | Fejlesztés                                   | Fejlesztés        | András, Erik, Levente, Tamás | 168 óra   | 26 óra  |    20 óra     |      22 óra   | 20 óra  |       88 óra    |
+| 5     | Tesztelés                                    | Fejlesztés        | András, Erik, Levente, Tamás | 8 óra     | 2 óra   |    2 óra     |    2 óra     | 2 óra   |      8 óra     |
+| 6     | Hibakeresés                                  | Fejlesztés        | András, Erik, Levente, Tamás | 4 óra     | 0,5 óra |    1,5 óra     |     2 óra    | 1 óra   |      5 óra     |
 | 7     | Bevezetés                                    | Végső stádium     | András, Erik, Levente, Tamás | 4 óra     |         |         |         |         |           |
